@@ -1,0 +1,1 @@
+ *ËV<?php exit; ?>a:1:{s:7:"content";s:321:"[{"message":"Yoast SEO a \u00e9t\u00e9 mis \u00e0 jour en version 3.0.7. <a href=\"http:\/\/www.biscaypla.in\/wp-admin\/admin.php?page=wpseo_dashboard&intro=1\">Cliquez ici<\/a> pour d\u00e9couvrir toutes les nouveaut\u00e9s !","options":{"type":"updated","id":"wpseo-dismiss-about","nonce":"039c9ba290","data_json":[]}}]";}
