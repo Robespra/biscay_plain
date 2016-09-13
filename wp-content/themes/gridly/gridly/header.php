@@ -29,6 +29,20 @@
 <script src="<?php echo get_template_directory_uri(); ?>/js/bouncyfilter.js"></script>
 <script src="<?php echo get_template_directory_uri(); ?>/js/functions.js"></script>
 <script src="<?php echo get_template_directory_uri(); ?>/js/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+<!-- Include the core jQuery and jQuery UI -->
+<!-- <script type='text/javascript' src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.js"></script> -->
+<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.2/jquery-ui.min.js"></script>
+
+<!-- Include the core media player JavaScript. -->
+<script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/osmplayer/bin/osmplayer.compressed.js"></script>
+
+<!-- Include the DarkHive ThemeRoller jQuery UI theme. -->
+<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/osmplayer/jquery-ui/dark-hive/jquery-ui.css">
+
+<!-- Include the Default template CSS and JavaScript. -->
+<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/osmplayer/templates/default/css/osmplayer_default.css">
+<script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/osmplayer/templates/default/osmplayer.default.js"></script>
+<script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/osmplayer/src/osmplayer.iscroll.js"></script>
 <!--[if lt IE 9]>
 	<script src="http://css3-mediaqueries-js.googlecode.com/files/css3-mediaqueries.js"></script>
 	<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<playlist version="1" xmlns="http://xspf.org/ns/0/">
+   <trackList>
+      <track>
+         <title>Jeff Gothelf: Demystifying Design</title>
+         <location>https://vimeo.com/39019792</location>
+         <image>https://i.vimeocdn.com/video/268944397_130x73.jpg</image>
+      </track>
+      <track>
+         <title>Why Design Matters</title>
+         <location>https://www.youtube.com/watch?v=J6LtABooE2c</location>
+         <image>https://i.ytimg.com/vi/J6LtABooE2c/hqdefault.jpg?custom=true&w=196&h=110&stc=true&jpg444=true&jpgq=90&sp=68&sigh=DwY1md_PvW0IZLcwMWrKDuEWkh0</image>
+      </track>
+      <track>
+         <title>Beacon - IM U</title>
+         <location>https://www.youtube.com/watch?v=DSEIEdRo02Q</location>
+         <image>https://i.ytimg.com/vi/DSEIEdRo02Q/hqdefault.jpg?custom=true&w=196&h=110&stc=true&jpg444=true&jpgq=90&sp=68&sigh=PL-FBjzl7wRsCMI2vO-Ii1zqKCE</image>
+      </track>
+      <track>
+         <title>Gonjasufi - The Blame</title>
+         <location>https://www.youtube.com/watch?v=6KyO5-_JbbI</location>
+         <image>https://i.ytimg.com/vi/6KyO5-_JbbI/hqdefault.jpg?custom=true&w=196&h=110&stc=true&jpg444=true&jpgq=90&sp=68&sigh=8jrV7k5b0F4Co0JTpcxi1PsjmaE</image>
+      </track>
+      <track>
+         <title>Chilly Gonzales - White Keys</title>
+         <location>https://www.youtube.com/watch?v=s8De5eg1kic</location>
+         <image>https://i.ytimg.com/vi/s8De5eg1kic/hqdefault.jpg?custom=true&w=196&h=110&stc=true&jpg444=true&jpgq=90&sp=68&sigh=hqeVAj2JwnKz-VzmgkLOy_BU99M</image>
+      </track>
+   
+      <track>
+         <title>Tim Hecker - The Ravedeath 1972</title>
+         <location>https://www.youtube.com/watch?v=1NkZVWXK5jM</location>
+         <image>https://i.ytimg.com/vi/1NkZVWXK5jM/hqdefault.jpg?custom=true&w=196&h=110&stc=true&jpg444=true&jpgq=90&sp=68&sigh=n7DZXXtTeT-XD6MH4c1tVV6woxg</image>
+      </track>
+      <track>
+         <title>Inge Druckrey: Teaching to See</title>
+         <location>https://vimeo.com/45232468</location>
+         <image>https://i.vimeocdn.com/video/316207219_130x73.jpg</image>
+      </track>
+      <track>
+         <title>gaz hilarant - the brian jonestown massacre</title>
+         <location>https://www.youtube.com/watch?v=n56VVTN9rG8</location>
+         <image>https://i.ytimg.com/vi/n56VVTN9rG8/hqdefault.jpg?custom=true&w=196&h=110&stc=true&jpg444=true&jpgq=90&sp=68&sigh=csYJpP86R_yu6MX7Vh4StNLW2QE</image>
+      </track>
+      
+   </trackList>
+</playlist>
+
+
+<!-- <iframe src="https://player.vimeo.com/video/39019792" width="500" height="281" frameborder="0" class="block-vid-1" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+
+
+<iframe class="block-vid-2" width="560" height="315" src="https://www.youtube.com/embed/J6LtABooE2c" frameborder="0" allowfullscreen></iframe>
+
+<iframe class="block-vid-1" width="450" height="253" src="https://www.youtube.com/embed/DSEIEdRo02Q" frameborder="0" allowfullscreen></iframe>https://www.youtube.com/embed/DSEIEdRo02Q
+<iframe class="block-vid-2" width="560" height="315" src="https://www.youtube.com/embed/6KyO5-_JbbI" frameborder="0" allowfullscreen></iframe>
+
+
+<iframe class="block-vid-1" width="560" height="315" src="https://www.youtube.com/embed/s8De5eg1kic" frameborder="0" allowfullscreen></iframe>
+
+<iframe class="block-vid-2" width="420" height="315" src="https://www.youtube.com/embed/1NkZVWXK5jM" frameborder="0" allowfullscreen></iframe>
+
+<iframe class="block-vid-1" src="https://player.vimeo.com/video/45232468?color=ffffff&title=0&byline=0&portrait=0" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+<iframe class="block-vid-2" width="420" height="315" src="https://www.youtube.com/embed/n56VVTN9rG8" frameborder="0" allowfullscreen></iframe> -->

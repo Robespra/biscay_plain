@@ -38,7 +38,7 @@
 <p>Actualisé quotidiennement</p>
 </li>
 </ul>
-<img class="app-footer-img"src="<?php bloginfo('template_url'); ?>/images/showcase-app.png" alt="Logo Poïesis"/>
+<img class="app-footer-img"-" alt="Logo Poïesis"/>
 </div><!-- // app-footer -->  
 </div>
 
