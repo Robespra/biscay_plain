@@ -112,7 +112,7 @@ wp_reset_postdata();
 <p>Une sélection quotidienne d'articles, bientôt disponible.
 </br>Pourquoi ne pas vous inscrire à notre newsletter pour être informé du lancement ?</p>
 </div>
-<img class="app-showca-img"src="<?php bloginfo('template_url'); ?>/images/showcase-app.png" alt="Logo Poïesis"/>
+<img class="app-showca-img"src="-" alt="Logo Poïesis"/>
 </div><!-- app-showcase -->
 
 
@@ -155,7 +155,10 @@ wp_reset_postdata();
         <ul class="cd-item-wrapper">
           <li data-type="red" class="is-visible">
             <?php
-            $args = array( 'numberposts' => 8, 'order'=> 'DSC');
+            $args = array( 
+              'numberposts' => 6, 
+              'order' => 'DESC'
+            );// CHECK FUNCTION.PHP LINE 104 FOR NUMBERPOSTS
             $theposts = get_posts( $args );
 
             foreach($theposts as $post) :
@@ -165,16 +168,18 @@ wp_reset_postdata();
             <a href="<?php the_permalink() ?>"><div class="item">
                  <?php if ( has_post_thumbnail() ) { ?>
                      <div class="gridly-image" ><?php the_post_thumbnail( 'lazy summary-image' );  ?></div>
-              <div class="gridly-category"><h2><?php the_title(); ?>
-
-            </h2>
-            <p class="category"><?php
+            <div class="gridly-category">
+              <p class="category"><?php
             $category = get_the_category(); 
             echo $category[0]->cat_name;
             ?></p>
+              <h2><?php the_title(); ?>
+
+            </h2>
+            
                             <?php } ?>
                         
-            <p class="small"><?php echo limit_words(get_the_excerpt(), '20'); ?> [...]</p>
+            <p class="small"><?php echo limit_words(get_the_excerpt(), '30'); ?> [...]</p>
                           
             </div><!-- gridly-category -->
             </div><!-- item -->
@@ -190,7 +195,13 @@ wp_reset_postdata();
 
           <li data-type="blue" class="is-hidden">
             <?php
-            $args = array( 'numberposts' => 8, 'category_name' => 'poiesis-core', 'orderby' => 'date', 'order' => 'DESC' );
+            $args = array( 
+              'numberposts' => 6, 
+              'category_name' => 'poiesis-core', 
+              'orderby' => 'date', 
+              'order' => 'DESC'
+            );// CHECK FUNCTION.PHP LINE 104 FOR NUMBERPOSTS
+
             $theposts = get_posts( $args );
 
             foreach($theposts as $post) :
@@ -199,11 +210,11 @@ wp_reset_postdata();
             ?>
             <a href="<?php the_permalink() ?>"><div class="item">
                  <?php if ( has_post_thumbnail() ) { ?>
-                     <div class="gridly-image" ><?php the_post_thumbnail( 'lazy summary-image' );  ?></div>
+                     <div class="gridly-image" ><?php the_post_thumbnail( 'lazy summary-image');  ?></div>
             <div class="gridly-category"><h2><?php the_title(); ?></h2>
                             <?php } ?>
                         
-            <p class="small"><?php echo limit_words(get_the_excerpt(), '20'); ?> [...]</p>
+            <p class="small"><?php echo limit_words(get_the_excerpt(), '30'); ?> [...]</p>
                            
             </div><!-- gridly-category -->
             </div><!-- item -->
@@ -218,8 +229,8 @@ wp_reset_postdata();
 
           <li data-type="green" class="is-hidden">
             <?php
-            $args = array( 'numberposts' => 8, 'category_name' => 'selection', 'orderby' => 'date', 'order' => 'DESC' );
-            $theposts = get_posts( $args );
+            $args = array( 'numberposts' => 6, 'category_name' => 'selection', 'orderby' => 'date', 'order' => 'DESC');
+            $theposts = get_posts( $args );// CHECK FUNCTION.PHP LINE 104 FOR NUMBERPOSTS
 
             foreach($theposts as $post) :
 
@@ -235,7 +246,7 @@ wp_reset_postdata();
             ?></p>
                             <?php } ?>
                         
-            <p class="small"><?php echo limit_words(get_the_excerpt(), '20'); ?> [...]</p>          
+            <p class="small"><?php echo limit_words(get_the_excerpt(), '30'); ?> [...]</p>          
             </div><!-- gridly-category -->
             </div><!-- item -->
             </a>
@@ -258,23 +269,19 @@ wp_reset_postdata();
 <div class="grey">
 <h2 class="video-title">VIDEOS-EN-VRAC</h2>
 
+
     <div class="bande-son">
-  <iframe src="https://player.vimeo.com/video/39019792" width="500" height="281" frameborder="0" class="block-vid-1" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-
-
-<iframe class="block-vid-2" width="560" height="315" src="https://www.youtube.com/embed/J6LtABooE2c" frameborder="0" allowfullscreen></iframe>
-
-<iframe class="block-vid-1" width="450" height="253" src="https://www.youtube.com/embed/DSEIEdRo02Q" frameborder="0" allowfullscreen></iframe>
-<iframe class="block-vid-2" width="560" height="315" src="https://www.youtube.com/embed/6KyO5-_JbbI" frameborder="0" allowfullscreen></iframe>
-
-
-<iframe class="block-vid-1" width="560" height="315" src="https://www.youtube.com/embed/s8De5eg1kic" frameborder="0" allowfullscreen></iframe>
-
-<iframe class="block-vid-2" width="420" height="315" src="https://www.youtube.com/embed/1NkZVWXK5jM" frameborder="0" allowfullscreen></iframe>
-
-<iframe class="block-vid-1" src="https://player.vimeo.com/video/45232468?color=ffffff&title=0&byline=0&portrait=0" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-<iframe class="block-vid-2" width="420" height="315" src="https://www.youtube.com/embed/n56VVTN9rG8" frameborder="0" allowfullscreen></iframe>
-
+    
+    <script type="text/javascript">
+  $(function() {
+    $("#osmplayer").osmplayer({
+      playlist: 'playlist.xml',
+      height: '500px'
+    });
+  });
+</script>
+<div id="osmplayer"></div>
+  
 </div> <!-- // bande-son -->
 </div> <!-- // "grey" -->
 
@@ -394,4 +401,5 @@ $('.ClickMeIndexSpotted').each(function() {
        </script> 
 
 </div>
+
 </body>
