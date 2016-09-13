@@ -211,7 +211,12 @@ wp_reset_postdata();
             <a href="<?php the_permalink() ?>"><div class="item">
                  <?php if ( has_post_thumbnail() ) { ?>
                      <div class="gridly-image" ><?php the_post_thumbnail( 'lazy summary-image');  ?></div>
-            <div class="gridly-category"><h2><?php the_title(); ?></h2>
+            <div class="gridly-category">
+            <p class="category"><?php
+            $category = get_the_category(); 
+            echo $category[0]->cat_name;
+            ?></p>
+            <h2><?php the_title(); ?></h2>
                             <?php } ?>
                         
             <p class="small"><?php echo limit_words(get_the_excerpt(), '30'); ?> [...]</p>
@@ -239,11 +244,13 @@ wp_reset_postdata();
             <a href="<?php the_permalink() ?>"><div class="item">
                  <?php if ( has_post_thumbnail() ) { ?>
                      <div class="gridly-image" ><?php the_post_thumbnail( 'lazy summary-image' );  ?></div>
-              <div class="gridly-category"><h2><?php the_title(); ?></h2>
-            <p class="category"><?php
+              <div class="gridly-category">
+              <p class="category"><?php
             $category = get_the_category(); 
             echo $category[0]->cat_name;
             ?></p>
+              <h2><?php the_title(); ?></h2>
+           
                             <?php } ?>
                         
             <p class="small"><?php echo limit_words(get_the_excerpt(), '30'); ?> [...]</p>          
@@ -287,7 +294,7 @@ wp_reset_postdata();
 
 
 <div id="bottom_index">
-<div class="container_bottom_index">
+<div id="container-articles">
 <div id="container-index-bottom">
 <div class="clear padding20"></div>
 <div class="clear padding20"></div>

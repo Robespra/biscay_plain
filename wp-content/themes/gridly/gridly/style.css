@@ -1464,13 +1464,7 @@ right: 0px;
 }
 
 
-.container_bottom_index{
-clear: both;
-max-width: 1600px;
-margin: 0px auto;
-overflow: hidden;
-padding: 5em 3em;
-}
+
 #container-index-bottom{
 position: relative;
 }
@@ -1842,9 +1836,9 @@ padding: 0.5em;
 
 .final
 {font-size: .7em;
-line-height: 1.3em;position:relative; overflow:hidden;font-family: 'Montserrat',  "Myriad Pro", Helvetica, Georgia, sans-serif; font-weight: 700;text-align: center;
+line-height: 1.3em;position:relative; overflow:hidden;font-family: 'Montserrat',  "Myriad Pro", Helvetica, Georgia, sans-serif; font-weight: 700;text-align: left;
 background: #34314c;
-padding: 3em 3%; }
+padding: 0.3em 3%; }
 .final a{
 color:#fff;
 font-weight: 400;
@@ -1869,10 +1863,12 @@ line-height: 1.2em;
 }
 
 #container-articles{
-clear:both;
-margin: 0px auto;
-overflow:hidden;
-background:#fff;
+    clear: both;
+    max-width: 1600px;
+    margin: 0px auto;
+    overflow: hidden;
+    padding: 1em;
+    background-color: #fff;
 }
 .grey 
 {
@@ -2576,7 +2572,7 @@ background: none;
     box-shadow: none;
     text-align: left;
 background:none;
-padding-top: 0;
+padding: 0;
    }
 
 .cd-filter ul:after {

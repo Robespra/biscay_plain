@@ -270,12 +270,56 @@ $(window).scroll(function(){
 <section>
 <nav class="final">
 
-   <div class="article-prec">      
-     <?php next_post_link('%link'); ?>
-</div>
-<div class="article-suivant">
- <?php previous_post_link('%link'); ?>
-       </div>
+<div class="cd-gallery-container">
+    <h3>Plus d'articles</h3>
+
+    <ul class="cd-gallery cd-container">
+      <li>
+        <ul class="cd-item-wrapper">
+          <li data-type="red" class="is-visible">
+            <?php
+            $args = array( 
+              'numberposts' => 3, 
+              'order' => 'DESC'
+            );// CHECK FUNCTION.PHP LINE 104 FOR NUMBERPOSTS
+            $theposts = get_posts( $args );
+
+            foreach($theposts as $post) :
+
+            setup_postdata($post);
+            ?>
+            <a href="<?php the_permalink() ?>"><div class="item">
+                 <?php if ( has_post_thumbnail() ) { ?>
+                     <div class="gridly-image" ><?php the_post_thumbnail( 'lazy summary-image' );  ?></div>
+            <div class="gridly-category">
+              <p class="category"><?php
+            $category = get_the_category(); 
+            echo $category[0]->cat_name;
+            ?></p>
+              <h2><?php the_title(); ?>
+
+            </h2>
+            
+                            <?php } ?>
+                        
+            <p class="small"><?php echo limit_words(get_the_excerpt(), '30'); ?> [...]</p>
+                          
+            </div><!-- gridly-category -->
+            </div><!-- item -->
+            </a>
+            <?php
+
+            endforeach;
+
+            wp_reset_postdata();
+            ?>
+
+          </li><!-- red -->
+
+        </ul>
+      </li>
+    </ul> <!-- cd-gallery -->
+  </div>
        </nav>
 </section>
 </div>

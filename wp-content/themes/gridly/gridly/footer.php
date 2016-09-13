@@ -21,23 +21,7 @@
    
         <a>CONTACT</a>
 <div class="app-footer">
-<ul class="recap">
-<li>
-<img>
-</img>
-<p>Articles pluridisciplinaires</p>
-</li>
-<li>
-<img>
-</img>
-<p>Confort de lecture</p>
-</li>
-<li>
-<img>
-</img>
-<p>Actualisé quotidiennement</p>
-</li>
-</ul>
+
 <img class="app-footer-img"-" alt="Logo Poïesis"/>
 </div><!-- // app-footer -->  
 </div>
