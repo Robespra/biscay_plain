@@ -25,12 +25,11 @@
 <meta property="og:description" content="Biscay Plain est un site-étude sur la créativité enrichit de réflexions d'artistes, de philosophes, de scientifiques ou d'écrivains." />
 <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
 <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/style.css"/>
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 <script src="<?php echo get_template_directory_uri(); ?>/js/bouncyfilter.js"></script>
 <script src="<?php echo get_template_directory_uri(); ?>/js/functions.js"></script>
 <script src="<?php echo get_template_directory_uri(); ?>/js/modernizr-2.6.2-respond-1.1.0.min.js"></script>
 <!-- Include the core jQuery and jQuery UI -->
-<!-- <script type='text/javascript' src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.js"></script> -->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.2/jquery-ui.min.js"></script>
 
 <!-- Include the core media player JavaScript. -->
