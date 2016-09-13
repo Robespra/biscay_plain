@@ -296,16 +296,16 @@ wp_reset_postdata();
   <ul class="cd-gallery cd-container">
 
 <?php 
-$popularpost = new WP_Query( array( 'posts_per_page' => 6, 'meta_key' => 'wpb_post_views_count', 'orderby' => 'meta_value_num', 'order' => 'DESC'  ) );
+$popularpost = new WP_Query( array( 'posts_per_page' => 5, 'meta_key' => 'wpb_post_views_count', 'orderby' => 'meta_value_num', 'order' => 'DESC'  ) );
 while ( $popularpost->have_posts() ) : $popularpost->the_post();?>
 
 <a href="<?php the_permalink() ?>"><div class="item">
      <?php if ( has_post_thumbnail() ) { ?>
-         <div class="gridly-image" ><?php the_post_thumbnail( 'lazy summary-image' );  ?></div>
+        
  <div class="gridly-category"><h2><?php the_title(); ?></h2>
                 <?php } ?>
             
-<p class="small"><?php echo limit_words(get_the_excerpt(), '20'); ?> [...]</p>
+<p class="small"><?php echo limit_words(get_the_excerpt(), '30'); ?> [...]</p>
                
 </div>
             </div></a>
