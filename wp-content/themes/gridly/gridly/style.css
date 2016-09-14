@@ -1221,7 +1221,9 @@ position:relative;
 .article{
 background-color:#fff;
 }
-#wrap-article{max-width:960px; margin:0px auto; display:block;overflow:hidden;  padding: 1em .5em;}
+#wrap-article{max-width:960px; margin:-6em auto 0 auto; display:block;overflow:hidden;  padding: 1em .5em;    background: #fff;
+    position: relative;
+    z-index: 9999;}
 #bg2A{width:100%;height:100%;margin:0;}
 #wpa2a_1 img {width:171px;}
 ::selection{background:#34314c;color:#FFFFFF;}
@@ -1238,7 +1240,6 @@ font-size: 1.5em;  z-index: 99;
   line-height: 1.1em;
   font-family: 'Montserrat', "Myriad Pro", Helvetica, Georgia, sans-serif;
   font-weight: 700;
-  color: #fff;
   text-align: right;
   margin-top: .1em;
   margin-bottom: .2em;
@@ -1249,7 +1250,6 @@ font-size: 1.5em;  z-index: 99;
 
 @media only screen and (min-width: 768px) {
 .header{
- margin-top: 6.5%;
 font-size: 4em;
 letter-spacing:1px;
 }
@@ -1719,10 +1719,11 @@ padding: 8px 0;
 
 .entry-content {
   width: 100%;
-  margin: 34px auto;
+  margin: -4em auto 3em auto;
   display: block;
   max-width: 696px;
-  margin-bottom: 3em;
+      z-index: 9999;
+    position: relative;
 }
 
 .entry-content p {
@@ -2476,6 +2477,10 @@ margin: 4% auto;
   margin: 2em auto;
 padding:0;
 bakcground:#fff;
+    width: 100%;
+}
+.margin-top {
+	margin-top: 0.1em;
 }
 
 .cd-filter ul:after {

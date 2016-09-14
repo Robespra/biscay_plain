@@ -19,7 +19,8 @@
 <!-- body has the class "cbp-spmenu-push" -->
 <nav class="cbp-spmenu cbp-spmenu-vertical cbp-spmenu-right" id="cbp-spmenu-s2">
   
-
+<div id="search"><?php get_search_form(); ?> 
+</div>
     <a class="first white" href="http://www.biscaypla.in">Accueil</a>
     <a class="ClickMe white">Langues  ►</a>
     <div class="box-langue"><a>Spanish</a><a>English</a></div>	
@@ -46,9 +47,6 @@
 <div id="wrap" class="article">
 <article>
 <span class="thumbnail_bg">
-<div id="wrap-article">
-<h2 class="header"><?php the_title(); ?></h2>
-</div>
 <?php the_post_thumbnail( '' );  ?>
 </span>
 <div id="wrap-article">
@@ -75,8 +73,9 @@ $('#showRight').click(function() {
 		</script>
 
 
-
   
+ <div class="entry-content">
+  <h2 class="header"><?php the_title(); ?></h2>
 <div class="clear padding60"></div>
 <div class="clear padding60"></div>
 	<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
@@ -91,8 +90,7 @@ $('#showRight').click(function() {
 </br><?php the_tags(); ?> </p>
                            
    
-  
- <div class="entry-content">
+
 
 <div class="padding20"></div>
  
@@ -128,37 +126,93 @@ fjs.parentNode.insertBefore(js, fjs);
 </ul>
   <p class="tags" style="text-align:left;"><?php the_tags(); ?></p>
   <p class="tags" style="text-align:left;"><?php the_category(', '); ?></p>
+                 
+
+
+
                  </div> 
 
-                <div class="padding10"></div>
-                <div class="clear"></div>
-
-			        
-<?php 
-// If comments are open or we have at least one comment, load up the comment template.
-					if ( comments_open() || get_comments_number() ) {
-						comments_template();
-					}
-
-			?>
-
-
+               
 
 </article>
 
 <section>
-<footer>
+<div class="cd-gallery-container margin-top">
+    <ul class="cd-gallery cd-container margin-top">
+    <h3>Plus d'articles</h3>
+     <div class="padding20"></div>
+      <li>
+        <ul class="cd-item-wrapper">
+          <li data-type="red" class="is-visible">
+            <?php
+            $args = array( 
+              'numberposts' => 3, 
+              'order' => 'DESC'
+            );// CHECK FUNCTION.PHP LINE 104 FOR NUMBERPOSTS
+            $theposts = get_posts( $args );
 
-<aside>
-<div id="search"><?php get_search_form(); ?> 
-</div>
-</aside>
+            foreach($theposts as $post) :
+
+            setup_postdata($post);
+            ?>
+            <a href="<?php the_permalink() ?>"><div class="item">
+                 <?php if ( has_post_thumbnail() ) { ?>
+                     <div class="gridly-image" ><?php the_post_thumbnail( 'lazy summary-image' );  ?></div>
+            <div class="gridly-category">
+              <p class="category"><?php
+            $category = get_the_category(); 
+            echo $category[0]->cat_name;
+            ?></p>
+              <h2><?php the_title(); ?>
+
+            </h2>
+            
+                            <?php } ?>
+                        
+            <p class="small"><?php echo limit_words(get_the_excerpt(), '30'); ?> [...]</p>
+                          
+            </div><!-- gridly-category -->
+            </div><!-- item -->
+            </a>
+            <?php
+
+            endforeach;
+
+            wp_reset_postdata();
+            ?>
+
+          </li><!-- red -->
+
+        </ul>
+      </li>
+    </ul> <!-- cd-gallery -->
+  </div>
+
+             
+<?php 
+// If comments are open or we have at least one comment, load up the comment template.
+          if ( comments_open() || get_comments_number() ) {
+            comments_template();
+          }
+
+      ?>
+
 
 <?php comments_template(); ?>
 
-		
+    
  <?php endwhile; endif; ?>
-       
+</section>
+<footer>
+
+<aside>
+ <div class="padding10"></div>
+                <div class="clear"></div>
+
+ 
+
+</aside>
+
 
 
 
@@ -267,61 +321,7 @@ $(window).scroll(function(){
 });
 // h3 anchors scroll
 </script> 
-<section>
-<nav class="final">
 
-<div class="cd-gallery-container">
-    <h3>Plus d'articles</h3>
-
-    <ul class="cd-gallery cd-container">
-      <li>
-        <ul class="cd-item-wrapper">
-          <li data-type="red" class="is-visible">
-            <?php
-            $args = array( 
-              'numberposts' => 3, 
-              'order' => 'DESC'
-            );// CHECK FUNCTION.PHP LINE 104 FOR NUMBERPOSTS
-            $theposts = get_posts( $args );
-
-            foreach($theposts as $post) :
-
-            setup_postdata($post);
-            ?>
-            <a href="<?php the_permalink() ?>"><div class="item">
-                 <?php if ( has_post_thumbnail() ) { ?>
-                     <div class="gridly-image" ><?php the_post_thumbnail( 'lazy summary-image' );  ?></div>
-            <div class="gridly-category">
-              <p class="category"><?php
-            $category = get_the_category(); 
-            echo $category[0]->cat_name;
-            ?></p>
-              <h2><?php the_title(); ?>
-
-            </h2>
-            
-                            <?php } ?>
-                        
-            <p class="small"><?php echo limit_words(get_the_excerpt(), '30'); ?> [...]</p>
-                          
-            </div><!-- gridly-category -->
-            </div><!-- item -->
-            </a>
-            <?php
-
-            endforeach;
-
-            wp_reset_postdata();
-            ?>
-
-          </li><!-- red -->
-
-        </ul>
-      </li>
-    </ul> <!-- cd-gallery -->
-  </div>
-       </nav>
-</section>
 </div>
 <?php get_footer(); ?>
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
