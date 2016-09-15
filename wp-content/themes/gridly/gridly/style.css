@@ -1543,12 +1543,6 @@ display: block;}
 }
 .thumbnail_bg img{
   width: 100%;
-  -webkit-filter: grayscale(0.7);
--webkit-filter: blur(4px);
-  -moz-filter: blur(4px);
-  -o-filter: blur(4px);
-  -ms-filter: blur(4px);
-  filter: blur(4px);
   position: absolute;
   z-index: 98;
   top: -10px;
