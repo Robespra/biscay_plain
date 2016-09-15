@@ -4,7 +4,7 @@
 <div class="la-anim-10"></div>
 <section>
 <header>
-<div id="top-menu">
+
 <div id="nav">
 <h1 class="hidden-h1">Biscay Plain, créativité Art et design</h1>
 <a href="http://www.biscaypla.in"><img class="logo" src="<?php echo get_template_directory_uri(); ?>/images/headerimage_1.svg" alt="Biscay Plain, création artistique et psychologie de l'Art"/></a>  
@@ -18,7 +18,7 @@
 <div id="showRight" class="closed"><img src="<?php echo get_template_directory_uri(); ?>/images/menu.svg"/></div></section>
 </div>
 <!-- // header -->   
-</div>   
+
 </header>   
 <div id="wrap" class="article">
 <article>
@@ -125,8 +125,7 @@ fjs.parentNode.insertBefore(js, fjs);
       </li>
     </ul> <!-- cd-gallery -->
   </div>
-
-             
+ <div id="wrap-article">            
 <?php 
 // If comments are open or we have at least one comment, load up the comment template.
           if ( comments_open() || get_comments_number() ) {
@@ -140,6 +139,7 @@ fjs.parentNode.insertBefore(js, fjs);
 
     
  <?php endwhile; endif; ?>
+   </div>
 </section>
 <footer>
 
