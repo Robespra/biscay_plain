@@ -59,12 +59,18 @@ $(window).load(function() {
 <h1 class="hidden-h1">Poïesis, concentré d'articles sur le jeu de la créativité</h1>
 <a href="#"><img class="logo-top"src="<?php bloginfo('template_url'); ?>/images/logo_hero_unit_hp_v2.svg" alt="Logo Poïesis"/></a>
 
-<div class="blocks">
+<div class="hero">
 
+<div class="illustr">
+test illustr
+</div><!-- illustr -->
+<div class="value">
+
+<div class="value_newsletter">
 <h2>Newsletter</h2>
 <?php echo do_shortcode('[sitepoint_contact_form]'); ?>
-
-
+</div><!-- value_newsletter -->
+</div><!-- value -->
 </div><!-- blocks -->
 
 
@@ -239,30 +245,24 @@ $(window).load(function() {
 <div class="clear padding20"></div>
 <div class="popular cd-gallery-container">
 <h2>Les plus populaires</h2>
-  <ul class="cd-gallery cd-container">
+  <ul class="populaires">
 
 <?php 
 $popularpost = new WP_Query( array( 'posts_per_page' => 5, 'meta_key' => 'wpb_post_views_count', 'orderby' => 'meta_value_num', 'order' => 'DESC'  ) );
 while ( $popularpost->have_posts() ) : $popularpost->the_post();?>
-
-<a href="<?php the_permalink() ?>"><div class="item">
-     <?php if ( has_post_thumbnail() ) { ?>
-        
- <div class="gridly-category"><h2><?php the_title(); ?></h2>
-                <?php } ?>
-            
+<li>
+<a href="<?php the_permalink() ?>"><div class="populaire_item">    
+ <div class="gridly-category"><h2><?php the_title(); ?></h2>          
 <p class="small"><?php echo limit_words(get_the_excerpt(), '30'); ?> [...]</p>
                
 </div>
             </div></a>
 
-
-
 <?php 
 endwhile;
 wp_reset_postdata();
 ?>
-
+</li>
 </ul>
 
 
