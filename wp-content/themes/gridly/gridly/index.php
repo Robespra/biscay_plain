@@ -52,81 +52,20 @@ $(window).load(function() {
 
 
 <div id="wrap">
-<div id="header_index">
 
 <!-- body has the class "cbp-spmenu-push" -->
-
-<script type="text/javascript" src="https://apis.google.com/js/plusone.js">
-  {lang: 'fr'}
-</script>                     
+                  
 
 <h1 class="hidden-h1">Poïesis, concentré d'articles sur le jeu de la créativité</h1>
 <a href="#"><img class="logo-top"src="<?php bloginfo('template_url'); ?>/images/logo_hero_unit_hp_v2.svg" alt="Logo Poïesis"/></a>
 
 <div class="blocks">
-<?php
-$args = array( 'numberposts' => 3, 'order'=> 'ASC', 'orderby' => 'DSC' );
-$theposts = get_posts( $args );
 
-foreach($theposts as $post) :
-
-setup_postdata($post);
-?>
-
-
-<a href="<?php the_permalink() ?>" class="item-index">
-     <?php if ( has_post_thumbnail() ) { ?>
-
-<div class="gridly-image-index">
-<?php the_post_thumbnail( 'lazy summary-image' );  ?>
-
-</div><!-- gridly-image-index -->
-
-<div class="gridly-figcaption">
-<div class="gridly-title-index">
-<p class="category"><?php
-$category = get_the_category(); 
-echo $category[0]->cat_name;
-?></p>
-<p class="gridly-date-index"><?php the_time(get_option('date_format')); ?>  </p>
-</div><!-- gridly-title-index -->
-      <?php } ?>
-            
-<p class="small-index"><?php echo limit_words(get_the_excerpt(), '20'); ?> [...]</p>
-</div><!-- gridly-figcaption -->
-<div class="figcaption-h2">
-<h2><?php the_title(); ?></h2>
-</div>
-</a><!-- item-index -->
-
-
-<?php
-endforeach;
-wp_reset_postdata();
-?>
-
-<div class="showcase">
-<div class="app-showcase">
-<div class="newsletterh2 float">
-<h2>Biscay sur votre mobile</h2>
-<p>Une sélection quotidienne d'articles, bientôt disponible.
-</br>Pourquoi ne pas vous inscrire à notre newsletter pour être informé du lancement ?</p>
-</div>
-<img class="app-showca-img"src="-" alt="Logo Poïesis"/>
-</div><!-- app-showcase -->
-
-
-<div class="newsletter-showcase">
-<div class="newsletterh2">
 <h2>Newsletter</h2>
-</div>
 <?php echo do_shortcode('[sitepoint_contact_form]'); ?>
 
-</div><!-- newsletter-showcase -->
 
-</div><!-- showcase -->
 </div><!-- blocks -->
-</div> <!-- header_index -->
 
 
 <div id="container-articles">

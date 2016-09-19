@@ -26,6 +26,8 @@
 <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
 <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/style.css"/>
 <script type='text/javascript' src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script src="<?php echo get_template_directory_uri(); ?>/js/jqueryv1.9.1.js" defer></script>
+<script src="<?php echo get_template_directory_uri(); ?>/js/jqueryv1.11.0.js" defer></script>
 <script src="<?php echo get_template_directory_uri(); ?>/js/bouncyfilter.js" defer></script>
 <script src="<?php echo get_template_directory_uri(); ?>/js/functions.js" defer></script>
 <script src="<?php echo get_template_directory_uri(); ?>/js/modernizr-2.6.2-respond-1.1.0.min.js"></script>

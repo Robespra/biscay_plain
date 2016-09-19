@@ -1745,13 +1745,40 @@ font-size:1rem;
 .blocks {
 overflow:hidden;
 position:relative;
+background: black;
+height: 70vh;
+}
 
+.blocks input[type=email]{
+  font-size: 24px;
+  line-height: 2em;
+  width: 300px;
+  padding-right: 2%;
+  text-align: right;
 }
-@media only screen and (min-width: 768px) {
-.blocks {
 
+.blocks input[type=submit]{
+  background: white;
+  border: none;
+  padding: 3%;
+  font-size: .9em;
+letter-spacing:0.1em;
 }
+.blocks p .confirm{
+position:absolute;
 }
+.blocks input[type=submit]:hover{
+  opacity:0.8;
+}
+
+.newsletterh2{
+  position: relative;
+  bottom: 20%;
+  left: 0; 
+}
+
+
+
 
 .symbol {
 margin: 15% auto 0 auto;
@@ -1949,116 +1976,14 @@ width: 100%;
 .gridly-link {float:right;font-size:14px;margin-bottom:5px;color:#fff}
 .gridly-link:hover{color:#34314c;}
 
-.showcase {min-height:263px;
-overflow: hidden;
-padding:0;
-clear: both;}
-
-.app-showcase{
-position: relative;
-float:left;
-width: 100%;
-min-height: 263px;
-background: #47b8e0;
-padding: 0% 1%;
-}
-.app-showca-img{
-position:absolute;
-bottom:0;
-  width: 30%;
-  float:left;
-}
-.newsletter-showcase{
-position: relative;
-float:left;
-width: 100%;
-min-height: 263px;
-max-height: 263px;
-background: #ff7473;
-padding: 0% 1%;
-}
-
-.newsletter-showcase p{
-  font-family: 'Montserrat', "Myriad Pro", Helvetica, Georgia, sans-serif;
-  font-size: 1em;
-  margin-bottom: .7em;
-  line-height: 1.4em;
-  text-align: right;
-color:#fff;
-overflow:hidden;
-}
-
-
-.newsletter-showcase input[type=email]{
-  font-size: 24px;
-  line-height: 2em;
-  width: 300px;
-  padding-right: 2%;
-  text-align: right;
-}
-
-.newsletter-showcase input[type=submit]{
-  background: white;
-  border: none;
-  padding: 3%;
-  font-size: .9em;
-letter-spacing:0.1em;
-}
-.newsletter-showcase p .confirm{
-position:absolute;
-}
-.newsletter-showcase input[type=submit]:hover{
-  opacity:0.8;
-}
-
-.newsletterh2{
-  position: relative;
-  bottom: 20%;
-  left: 0; 
-}
-
-.float {
-  float: left;
-  width: 70%;
-}
-.newsletterh2 h2{
-clear:both;
-position:relative;
-padding: .5em 0;
-letter-spacing: 1px;
-text-transform: uppercase;
-text-align: left;
-  font-size: 43px;
-  line-height: 1em;
-color:#fff;
-text-shadow:none;
-font-family: 'Montserrat',  "Myriad Pro", Helvetica, Georgia, sans-serif; font-weight: 700;
-margin:0 auto; 
-}
-
-.newsletterh2 p{
-   font-family: 'Montserrat', "Myriad Pro", Helvetica, Georgia, sans-serif;
-  font-size: 1em;
-  margin-bottom: .7em;
-  line-height: 1.4em;
-color:#fff;
-}
 
 
 
-@media only screen and (min-width: 768px) {
-.app-showcase{
-width: 70%;
-margin-bottom: 0;
-}
-.newsletter-showcase{
-width: 26%;
-}
 
-.showcase {
 
-}
-}
+
+
+
 
 .newsletter_footer{
 position: relative;
