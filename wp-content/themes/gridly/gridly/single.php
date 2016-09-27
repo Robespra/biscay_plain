@@ -4,7 +4,6 @@
 <div class="la-anim-10"></div>
 <section>
 <header>
-
 <div id="nav">
 <h1 class="hidden-h1">Biscay Plain, créativité Art et design</h1>
 <a href="http://www.biscaypla.in"><img class="logo" src="<?php echo get_template_directory_uri(); ?>/images/headerimage_1.svg" alt="Biscay Plain, création artistique et psychologie de l'Art"/></a>  
@@ -12,13 +11,11 @@
 <nav class="cbp-spmenu cbp-spmenu-vertical cbp-spmenu-right" id="cbp-spmenu-s2">
 <div id="search"><?php get_search_form(); ?> </div>
 </nav>
-
 <section class="buttonset">
 <!-- Class "cbp-spmenu-open" gets applied to menu and "cbp-spmenu-push-toleft" or "cbp-spmenu-push-toright" to the body -->
 <div id="showRight" class="closed"><img src="<?php echo get_template_directory_uri(); ?>/images/menu.svg"/></div></section>
 </div>
 <!-- // header -->   
-
 </header>   
 <div id="wrap" class="article">
 <article>
@@ -31,22 +28,16 @@
 <div class="clear padding60"></div>
 <div class="clear padding60"></div>
 	<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
-			                
    		<div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-
 	<p class="catekoi">
  	<a href="http://www.biscaypla.in">POESIS</a></p>		       			
 <div class="intro-excerp"><?php the_excerpt(); ?></div>
   <p class="tags"><?php the_time(get_option('date_format')); ?> 
-</br><?php the_tags(); ?> </p>
-                           
-<div class="padding20"></div>
- 
+</br><?php the_tags(); ?> </p>                        
+<div class="padding20"></div> 
            		 <?php the_content(); 
 wpb_set_post_views(get_the_ID());
-
 ?> 
- 
 <ul id="share">
 <li class="whatsapp"><div class="whatsapp-btn"><?php echo do_shortcode('[whatsapp]'); ?></div></li>
 <li class="facebook">
@@ -73,9 +64,8 @@ fjs.parentNode.insertBefore(js, fjs);
   <p class="tags" style="text-align:left;"><?php the_category(', '); ?></p>
 </div> 
 </article>
-
 <section>
-<div class="cd-gallery-container margin-top">
+<div class="cd-gallery-container margin-top background-color">
     <ul class="cd-gallery cd-container margin-top">
     <h3>Plus d'articles</h3>
      <div class="padding20"></div>
@@ -84,13 +74,11 @@ fjs.parentNode.insertBefore(js, fjs);
           <li data-type="red" class="is-visible">
             <?php
             $args = array( 
-              'numberposts' => 3, 
+              'numberposts' => 4, 
               'order' => 'DESC'
             );// CHECK FUNCTION.PHP LINE 104 FOR NUMBERPOSTS
             $theposts = get_posts( $args );
-
             foreach($theposts as $post) :
-
             setup_postdata($post);
             ?>
             <a href="<?php the_permalink() ?>"><div class="item">
@@ -102,58 +90,31 @@ fjs.parentNode.insertBefore(js, fjs);
             echo $category[0]->cat_name;
             ?></p>
               <h2><?php the_title(); ?>
-
             </h2>
             
                             <?php } ?>
                         
-            <p class="small"><?php echo limit_words(get_the_excerpt(), '30'); ?> [...]</p>
-                          
+            <p class="small"><?php echo limit_words(get_the_excerpt(), '30'); ?> [...]</p>           
             </div><!-- gridly-category -->
             </div><!-- item -->
             </a>
             <?php
-
             endforeach;
-
             wp_reset_postdata();
             ?>
-
           </li><!-- red -->
-
         </ul>
       </li>
     </ul> <!-- cd-gallery -->
-  </div>
- <div id="wrap-article">            
-<?php 
-// If comments are open or we have at least one comment, load up the comment template.
-          if ( comments_open() || get_comments_number() ) {
-            comments_template();
-          }
-
-      ?>
-
-
-<?php comments_template(); ?>
-
-    
+  </div>          
  <?php endwhile; endif; ?>
-   </div>
 </section>
 <footer>
-
 <aside>
  <div class="padding10"></div>
                 <div class="clear"></div>
-
-
 </aside>
-
-
 </section>
-
-
 <script> 
 // h3 anchors scroll
 // Cache selectors
@@ -202,8 +163,7 @@ $(window).scroll(function(){
    }                   
 });
 // h3 anchors scroll
-</script> 
-
+</script>
 </div>
 <?php get_footer(); ?>
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>

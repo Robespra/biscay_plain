@@ -5,15 +5,12 @@
 <title><?php
  if ( is_search() ) :
  echo 'Résultats de recherche pour "'.get_search_query().'" | ';
- 
  else :
  wp_title('|', true, 'right');
  endif;
-
  bloginfo('name'); 
 ?></title>
 <link rel="shortcut icon" href="http://www.biscaypla.in/favicon.ico">
-
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
 <meta name=viewport content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
 <meta property="og:locale" content="fr_FR" />
@@ -34,24 +31,19 @@
 <!-- Include the core jQuery and jQuery UI -->
 <script type='text/javascript' src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.2/jquery-ui.min.js"></script>
-
 <!-- Include the core media player JavaScript. -->
 <script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/osmplayer/bin/osmplayer.compressed.js"></script>
-
 <!-- Include the DarkHive ThemeRoller jQuery UI theme. -->
 <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/osmplayer/jquery-ui/dark-hive/jquery-ui.css">
-
 <!-- Include the Default template CSS and JavaScript. -->
 <!-- <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/osmplayer/templates/default/css/osmplayer_default.css"> -->
 <script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/osmplayer/templates/default/osmplayer.default.js"></script>
 <script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/osmplayer/src/osmplayer.iscroll.js"></script>
+<script src="<?php echo get_template_directory_uri(); ?>/js/newsletter_sign_up_lib.js"></script>
 <!--[if lt IE 9]>
 	<script src="http://css3-mediaqueries-js.googlecode.com/files/css3-mediaqueries.js"></script>
 	<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
 <![endif]-->
-
-
-
 <!-- icon for iOS Devices -->
 <link rel="apple-touch-icon" href="<?php echo get_template_directory_uri(); ?>/images/apple-touch-icon.png"/>
 <link rel="apple-touch-icon" sizes="114x114" href="<?php echo get_template_directory_uri(); ?>/images/apple-touch-icon-iphone4.png"/>
@@ -66,7 +58,6 @@ function closeIt(ID) {
     document.getElementById(ID).style.display = "none";
 }
 </script>
-
 <script language="JavaScript" type="text/javascript">
 <!--
 function getsupport ( selectedtype )
@@ -75,8 +66,4 @@ function getsupport ( selectedtype )
   document.supportform.submit() ;
 }
 </script>
-
-
-
 </head>
-
