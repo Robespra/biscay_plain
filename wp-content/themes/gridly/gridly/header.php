@@ -39,6 +39,7 @@
 <script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/osmplayer/templates/default/osmplayer.default.js"></script>
 <script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/osmplayer/src/osmplayer.iscroll.js"></script>
 <script src="<?php echo get_template_directory_uri(); ?>/js/newsletter_sign_up_lib.js"></script>
+<script src="<?php echo get_template_directory_uri(); ?>/js/jquery.lazy.min.js"></script>
 <!--[if lt IE 9]>
 	<script src="http://css3-mediaqueries-js.googlecode.com/files/css3-mediaqueries.js"></script>
 	<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>

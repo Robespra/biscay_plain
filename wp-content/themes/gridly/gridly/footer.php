@@ -32,5 +32,6 @@ if(!Modernizr.svg) {
 }
 </script>
 </section>
+
 </body>
 </html>
