@@ -204,8 +204,9 @@ $(window).load(function() {
 	</div>
 </div>
 <div class="grey">
-<h2 class="video-title">VIDEOS-EN-VRAC</h2>
+
     <div class="bande-son">
+    <h3 style="color:#fff">Vidéos en vrac</h3>
     <script type="text/javascript">
   $(function() {
     $("#osmplayer").osmplayer({
@@ -222,11 +223,12 @@ $(window).load(function() {
 <div id="container-index-bottom">
 <div class="clear padding20"></div>
 <div class="citation_container">
+<a href="http://localhost:8888/2016/01/20/les-motivations-de-la-creativite/">
 <div class="citation">
-The important thing is to not stop questioning. 
-Curiosity has its own reason for existing.
-<p>Albert Einstein</p>
+Il nous faut de toute manière révéler cette force, la manifester dans ses fonctions tout comme elle se manifeste en nous.
+<p>Paul Klee</p>
 </div>
+</a>
 </div>
 <div class="clear padding20"></div>
 <section>
