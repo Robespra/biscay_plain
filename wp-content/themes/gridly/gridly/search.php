@@ -1,58 +1,33 @@
 <?php get_header(); ?>
+
 <body class="cbp-spmenu-push">
-
-
-   <div class="padding10"></div>
-
-
-
-
+<div class="padding10"></div>
 <div class="la-anim-10"></div>
 <section>
 <header>
-       	        
-
 <div id="nav">
 <h1 class="hidden-h1">Biscay Plain, créativité Art et design</h1>
 <a href="http://www.biscaypla.in"><img class="logo" src="<?php echo get_template_directory_uri(); ?>/images/headerimage_1.svg" alt="Biscay Plain, création artistique et psychologie de l'Art"/></a>  
 <!-- body has the class "cbp-spmenu-push" -->
 <nav class="cbp-spmenu cbp-spmenu-vertical cbp-spmenu-right" id="cbp-spmenu-s2">
-  
-
-    <a class="first white" href="http://www.biscaypla.in">Accueil</a>
-    <a class="ClickMe white">Langues  ►</a>
-    <div class="box-langue"><a>Spanish</a><a>English</a></div>	
-    <a class="white" href="http://www.biscaypla.in/Poesis_pdf_ebook.pdf">Telecharger eBook (pdf)</a>
-    <a class="ClickMeApp white">Télécharger App  ►</a>
-    
-<a class="ClickMeShare white">Partager  ►</a>
-    <div class="share"><a>Facebook</a><a>Twitter</a><a>Google +</a><a>Pinterest</a></div>	
-    <a class="white" href="http://www.biscaypla.in/a-propos/">A propos</a>
-    <a class="white" href="#">Guide de style</a>
-    <a class="white" href="#">Partenariat</a>
-    <a class="white" href="http://www.biscaypla.in/contact-2/">Contact</a>
+<div id="search"><?php get_search_form(); ?> </div>
 
 </nav>
-
 <section class="buttonset">
 <!-- Class "cbp-spmenu-open" gets applied to menu and "cbp-spmenu-push-toleft" or "cbp-spmenu-push-toright" to the body -->
 <div id="showRight" class="closed"><img src="<?php echo get_template_directory_uri(); ?>/images/menu.svg"/></div></section>
 </div>
-	  
-
-<!-- // header -->      
+<!-- // header -->   
 </header>   
+<div id="wrap" class="article">
 
-
-		
-
-		<div id="wrap">
-<div id="container-articles" style="background-color:#ebeee6">
-<div class="cd-gallery-container">
 <article>
+<span class="thumbnail_bg">
 
+<?php the_post_thumbnail( '' );  ?>
+</span>
+<div id="wrap-article">
 
-		<div class="column span-9 first" id="maincontent">
 
 			<div class="content">
 
@@ -60,7 +35,10 @@
 <div class="clear padding20"></div>
 <div class="clear padding20"></div>
 <div class="clear padding20"></div>
-<h2 class="pagetitle">Résultats pour : "<?php echo $s ?>"</h2>
+
+<h2 class="pagetitle">
+RECHERCHE </br>
+Résultats pour : "<?php echo $s ?>"</h2>
 <div class="clear padding20"></div>
 <div class="clear padding20"></div>
 
@@ -83,31 +61,63 @@ echo $category[0]->cat_name;
 <p class="small"><?php echo limit_words(get_the_excerpt(), '20'); ?> [...]</p>
               
 </div>
-</div>
             </div></a>
 			
 	
 		<?php endwhile; ?>
 
-		<div class="navigation">
-			<div class="alignleft"><?php next_posts_link('&laquo; Previous') ?></div>
-			<div class="alignright"><?php previous_posts_link('Next &raquo;') ?></div>
 		</div>
+</article>
+</div> <!-- /wrap-article -->
+
 
 	<?php else : ?>
 
-		<h2 class="center">No posts found. Try a different search?</h2>
-		<?php include (TEMPLATEPATH . '/searchform.php'); ?>
+<div id="wrap-article">
+
+
+			<div class="content">
+
+<div class="clear padding20"></div>
+<div class="clear padding20"></div>
+<div class="clear padding20"></div>
+
+<h2 class="pagetitle">
+RECHERCHE</br>
+Aucun résultat... Essayez un autre mot clef.</h2>
+<div class="clear padding20"></div>
+<div class="clear padding20"></div>
+
+		<div class="clear"></div>
+
+<?php include (TEMPLATEPATH . '/searchform.php'); ?>
+<div class="clear padding20"></div>
+<div class="clear padding20"></div>
+<div class="clear padding20"></div>
+<div class="clear padding20"></div>
+<div class="clear padding20"></div>
+<div class="clear padding20"></div>
+<div class="clear padding20"></div>
+<div class="clear padding20"></div>
+<div class="clear padding20"></div>
+<div class="clear padding20"></div>
+		</div>
+</article>
+</div> <!-- /wrap-article -->
+
+
+
+
+
+
+
 
 	<?php endif; ?>
 
-		</div> <!-- /content -->
-	</div> <!-- /maincontent-->
+
 
 	
-</div>
-	</div> <!-- /page -->
+
 
 </section>
-<?php get_sidebar(); ?>
 <?php get_footer(); ?>

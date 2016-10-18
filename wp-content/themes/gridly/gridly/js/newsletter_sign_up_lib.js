@@ -9,7 +9,7 @@ $(document).ready(function () {
         $response.find('p').remove();
 
         if (!testmail.test($mail.val())) {
-            $response.html('<p class="error">Please enter a valid email</p>');
+            $response.html('<p class="error">Format invalide, merci de corriger.</p>');
             hasError = true;
         }
 
@@ -29,11 +29,12 @@ $(document).ready(function () {
                 $response.html('<p>'+data.message+'</p>');
             }).fail(function() {
                 $response.removeClass('loading');
-                $response.html('<p>An error occurred, please try again</p>');
+                $response.html('<p>erreur, essayez une fois encore</p>');
             })
         }
 
 
         return false;
     });
+
 });

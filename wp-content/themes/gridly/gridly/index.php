@@ -45,11 +45,11 @@ $(window).load(function() {
 </script>
 <div id="wrap">
 <!-- body has the class "cbp-spmenu-push" -->
-<h1 class="hidden-h1">Poïesis, concentré d'articles sur le jeu de la créativité</h1>
-<a href="#"><img class="logo-top"src="<?php bloginfo('template_url'); ?>/images/logo_hero_unit_hp_v2.svg" alt="Logo Poïesis"/></a>
+<h1 class="hidden-h1">hacedor, concentré d'articles sur le jeu de la créativité</h1>
+<a href="#"><img class="logo-top"src="<?php bloginfo('template_url'); ?>/images/headerimage_1.svg" alt="Logo Poïesis"/></a>
 <div class="double_container">
 <div class="double_left">
-test illustr
+<img class=" " src="<?php bloginfo('template_url'); ?>/images/hero_news.svg" alt="Biscay Newsletter illustration"/>
 </div><!-- illustr -->
 <div class="double_right">
 
@@ -60,29 +60,34 @@ test illustr
 </div><!-- blocks -->
 <div id="container-articles">
   <div class="cd-gallery-container">
-    <div id="search-index">
-      <form method="get" id="searchformindex" action="<?php bloginfo('url'); ?>/">
-      <div><input  type="search"  value="<?php the_search_query(); ?>"
-      name="s" id="s"/></div>
-      </form>
-    </div> <!-- search-index -->
-    <nav class="cd-filter">
-      <ul>
-        <li class="placeholder"><a data-type="red" href="#0">Derniers articles</a> <!-- selected option on mobile --></li> 
-        <li><a class="selected" data-type="red" href="#0">Derniers articles (la pratique?)</a></li>
-        <li><a data-type="green" href="#0">La pratique</a></li>
-        <li><a data-type="blue" href="#0">La théorie</a></li>
-        <li><a data-type="white" href="#0">Les jeux</a></li>
-        
-        </ul>
-    </nav>
+    <div class="articles-navbar">
+      <nav class="cd-filter">
+        <ul>
+          <li class="placeholder"><a data-type="red" href="#0">Derniers articles</a> <!-- selected option on mobile --></li> 
+          <li><a class="selected" data-type="red" href="#0">Derniers articles</a></li>
+          <li><a data-type="green" href="#0">La pratique</a></li>
+          <li><a data-type="blue" href="#0">La théorie</a></li>
+          <!-- <li><a data-type="white" href="#0">Les jeux</a></li> -->
+        <li>
+          <div id="search-index">
+        <form method="get" id="searchformindex" action="<?php bloginfo('url'); ?>/">
+        <div><input  type="search"  value="<?php the_search_query(); ?>"
+        name="s" id="s"/></div>
+        </form>
+      </div> <!-- search-index -->
+      </li>
+      </ul>
+        </nav>
+      </div> <!-- articles-navbar -->
+      
+
     <ul class="cd-gallery cd-container">
       <li>
         <ul class="cd-item-wrapper">
           <li data-type="red" class="is-visible">
             <?php
             $args = array( 
-              'numberposts' => 8, 
+              'numberposts' => 6, 
               'order' => 'DESC'
             );// CHECK FUNCTION.PHP LINE 104 FOR NUMBERPOSTS
             $theposts = get_posts( $args );
@@ -108,11 +113,21 @@ test illustr
             endforeach;
             wp_reset_postdata();
             ?>
+            <a href="lienpub"><div class="item">
+                     <div class="gridly-image"><img class="l" src="<?php bloginfo('template_url'); ?>/images/pub_index.jpg"></div>
+            <div class="gridly-category">
+              <p class="category pub_index">PUBLICITE</p>
+              <h2>TITRE
+            </h2>       
+            <p class="small">small desxription</p>         
+            </div><!-- gridly-category -->
+            </div><!-- item -->
+            </a>
           </li><!-- red -->
           <li data-type="blue" class="is-hidden">
             <?php
             $args = array( 
-              'numberposts' => 8, 
+              'numberposts' => 6, 
               'category_name' => 'poiesis-core', 
               'orderby' => 'date', 
               'order' => 'DESC'
@@ -125,10 +140,7 @@ test illustr
                  <?php if ( has_post_thumbnail() ) { ?>
                      <div class="gridly-image" ><?php the_post_thumbnail( 'lazy summary-image');  ?></div>
             <div class="gridly-category">
-            <p class="category"><?php
-            $category = get_the_category(); 
-            echo $category[0]->cat_name;
-            ?></p>
+            
             <h2><?php the_title(); ?></h2>
                             <?php } ?>
                         
@@ -140,22 +152,29 @@ test illustr
             endforeach;
             wp_reset_postdata();
             ?>
+            <a href="lienpub"><div class="item">
+                     <div class="gridly-image"><img class="l" src="<?php bloginfo('template_url'); ?>/images/pub_index.jpg"> </div>
+            <div class="gridly-category">
+              <p class="category pub_index">PUBLICITE</p>
+              <h2>TITRE
+            </h2>       
+            <p class="small">small desxription</p>         
+            </div><!-- gridly-category -->
+            </div><!-- item -->
+            </a>
           </li><!-- blue -->
           <li data-type="green" class="is-hidden">
             <?php
-            $args = array( 'numberposts' => 8, 'category_name' => 'selection', 'orderby' => 'date', 'order' => 'DESC');
+            $args = array( 'numberposts' => 6, 'category_name' => 'selection', 'orderby' => 'date', 'order' => 'DESC');
             $theposts = get_posts( $args );// CHECK FUNCTION.PHP LINE 104 FOR NUMBERPOSTS
             foreach($theposts as $post) :
             setup_postdata($post);
             ?>
             <a href="<?php the_permalink() ?>"><div class="item">
                  <?php if ( has_post_thumbnail() ) { ?>
-                     <div class="gridly-image" ><?php the_post_thumbnail( 'lazy summary-image' );  ?></div>
+                     <div class="gridly-image"><?php the_post_thumbnail( 'lazy summary-image' );  ?></div>
               <div class="gridly-category">
-              <p class="category"><?php
-            $category = get_the_category(); 
-            echo $category[0]->cat_name;
-            ?></p>
+              
               <h2><?php the_title(); ?></h2>
            
                             <?php } ?>
@@ -167,7 +186,17 @@ test illustr
             <?php
             endforeach;
             wp_reset_postdata();
-            ?>        
+            ?>     
+            <a href="lienpub"><div class="item">
+                     <div class="gridly-image"><img class="l" src="<?php bloginfo('template_url'); ?>/images/pub_index.jpg"></div>
+            <div class="gridly-category">
+              <p class="category pub_index ">PUBLICITE</p>
+              <h2>TITRE
+            </h2>       
+            <p class="small">small desxription</p>         
+            </div><!-- gridly-category -->
+            </div><!-- item -->
+            </a>   
           </li><!-- green -->         
         </ul>
       </li>
@@ -211,7 +240,7 @@ while ( $popularpost->have_posts() ) : $popularpost->the_post();?>
 <li data-type="red" class="is-visible">
 <a href="<?php the_permalink() ?>"><div class="item">
                  <?php if ( has_post_thumbnail() ) { ?>
-                     <div class="gridly-image" ><?php the_post_thumbnail( 'lazy summary-image' );  ?></div>
+                     <div class="gridly-image pop"><?php the_post_thumbnail( 'lazy summary-image' );  ?></div>
             <div class="gridly-category">
               <p class="category"><?php
             $category = get_the_category(); 
@@ -222,12 +251,11 @@ while ( $popularpost->have_posts() ) : $popularpost->the_post();?>
             
                             <?php } ?>
                         
-            <p class="small"><?php echo limit_words(get_the_excerpt(), '30'); ?> [...]</p>           
+            <p class="small"><?php echo limit_words(get_the_excerpt(), '10'); ?> [...]</p>           
             </div><!-- gridly-category -->
             </div><!-- item -->
 <?php 
 endwhile;
-wp_reset_postdata();
 ?>
 </a>
 </li>
@@ -260,18 +288,6 @@ if(!Modernizr.svg) {
     });
 }
 </script>
-<script type="text/javascript" defer="">
-$('.ClickMeIndexSpotted').each(function() {
-    $(this).show(0).on('click', function(e) {
-       e.preventDefault();
-       $(this).next('.spotted').slideToggle('fast', function() {
-            $(this).prev().html($(this).is(':visible') ? 'Spotted &#9660;' : 'Spotted &#9658');
-        });
-    });
-   if ($(this).data('box-show')) {
-        $(this).trigger('click');
-    }   
-});
-</script> 
+
 </div>
 </body>

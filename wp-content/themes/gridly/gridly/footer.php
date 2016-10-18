@@ -1,6 +1,7 @@
 <div id="footer">
 <div class="bg_newsletter_footer">
-<?php include('newsletter_value.php'); ?>
+ <?php include('newsletter_value.php'); ?>
+
 </div>
 <div class="social footerico">
 <li><a style="color:#e05d4d;" href="http://twitter.com/home?status=Intéressant... http://www.biscaypla.in" title="Partager cet article sur Twitter!" target="_blank"><img class="lazy" src="<?php bloginfo('template_url'); ?>/images/social_twitter.svg"/></a></li>
@@ -9,7 +10,9 @@
 <li><a href="http://pinterest.com/pin/create/button/"  count-layout="none" target="blank"><img class="lazy" src="<?php bloginfo('template_url'); ?>/images/social_pint.svg"/></a> </li>
 </div><a>A PROPOS</a>/<a>TAMIS</a>/<a>NEWSLETTER</a>/<a>CONTACT</a>
 <div class="app-footer">
-<img class="app-footer-img"-" alt="Logo Poïesis"/>
+<a href="" title="">
+<img class="app-footer-img" src="<?php bloginfo('template_url'); ?>/images/footerimage_1.svg" alt="Logo Poïesis"/>
+</a>
 </div><!-- // app-footer -->  
 </div>
 </div><!-- // wrap -->   

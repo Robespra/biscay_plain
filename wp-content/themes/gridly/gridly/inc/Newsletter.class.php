@@ -17,11 +17,11 @@ class Newsletter
 
             if (empty(self::$email)) {
                 $status  = "error";
-                $message = "The email address field must not be blank";
+                $message = "Merci d'entrer un email.";
                 self::$valid = false;
             } else if (!filter_var(self::$email, FILTER_VALIDATE_EMAIL)) {
                 $status  = "error";
-                $message = "You must fill the field with a valid email address";
+                $message = "Oups... Le format de cet email ne semble pas valide";
                 self::$valid = false;
             }
 
@@ -41,14 +41,14 @@ class Newsletter
 
                     if ($q) {
                         $status  = "success";
-                        $message = "You have been successfully subscribed";
+                        $message = "Votre email a bien été enregistré, merci !";
                     } else {
                         $status  = "error";
-                        $message = "An error occurred, please try again";
+                        $message = "Erreur, merci d'essayer une nouvelle fois.";
                     }
                 } else {
                     $status  = "error";
-                    $message = "This email is already subscribed";
+                    $message = "Cet email est déjà enregistré.";
                 }
             }
 

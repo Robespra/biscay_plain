@@ -1,4 +1,5 @@
 <?php get_header(); ?>
+
 <body class="cbp-spmenu-push">
 <div class="padding10"></div>
 <div class="la-anim-10"></div>
@@ -10,6 +11,7 @@
 <!-- body has the class "cbp-spmenu-push" -->
 <nav class="cbp-spmenu cbp-spmenu-vertical cbp-spmenu-right" id="cbp-spmenu-s2">
 <div id="search"><?php get_search_form(); ?> </div>
+
 </nav>
 <section class="buttonset">
 <!-- Class "cbp-spmenu-open" gets applied to menu and "cbp-spmenu-push-toleft" or "cbp-spmenu-push-toright" to the body -->
@@ -18,8 +20,10 @@
 <!-- // header -->   
 </header>   
 <div id="wrap" class="article">
+
 <article>
 <span class="thumbnail_bg">
+
 <?php the_post_thumbnail( '' );  ?>
 </span>
 <div id="wrap-article">
@@ -106,15 +110,16 @@ fjs.parentNode.insertBefore(js, fjs);
         </ul>
       </li>
     </ul> <!-- cd-gallery -->
-  </div>          
- <?php endwhile; endif; ?>
+  </div> 
+   <?php endwhile; endif; ?>     
+
 </section>
+
+</section>
+</div>
 <footer>
-<aside>
- <div class="padding10"></div>
-                <div class="clear"></div>
-</aside>
-</section>
+<?php get_footer(); ?>
+</footer>
 <script> 
 // h3 anchors scroll
 // Cache selectors
@@ -164,10 +169,6 @@ $(window).scroll(function(){
 });
 // h3 anchors scroll
 </script>
-</div>
-<?php get_footer(); ?>
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-</footer>
 <script src="<?php echo get_template_directory_uri(); ?>/js/classie.js"></script>
     <script>
       var   menuRight = document.getElementById( 'cbp-spmenu-s2' ),
