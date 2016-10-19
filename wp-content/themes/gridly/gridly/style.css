@@ -775,48 +775,89 @@ padding:40px 0;
 /* General styles for all menus */
 .mobile-only {display:none;}
 .cbp-spmenu {
-  background:rgba(91, 78, 96, 0.9);
+  background:rgba(255,255,255, 0.95);  
   position: fixed;
 text-align: center;
 z-index:12;
 font-family: 'Montserrat',  "Myriad Pro", Helvetica, Georgia, sans-serif;
 }
-#search {width:70%;
+#search {width:100%;
 display: block;
 position: relative;
 overflow: hidden;
-margin: 1% auto 4em auto;}
+    margin: 1% auto;}
 .responsive {
-width:70%;
-font-size: 1.7em;
+  padding:  3% 0;
+font-size: 5em;
 display: block;
 float: left;
+background-color: transparent;
+border: none;
+outline: none;
 }
 
 
+.article_search {
+  width: 90%;
+  margin: 5% auto 3% auto;
+    display: block;
+  text-align: left;
+}
+
+
+.article_search h2 {
+font-size: 4em;
+margin-bottom: 0.5em;
+}
+
+.search_left{
+width:40%;
+float: left;
+text-align: left;
+    padding: 0 5%;
+        margin-bottom: 10%;
+}
+
+.search_right{
+width:40%;
+float: left;
+text-align: left;
+padding: 0 5%;
+margin-bottom: 10%;
+}
+.separator{
+      margin-bottom: 10%;
+    display: block;
+}
 .cbp-spmenu a {
   display: block;
-  color: #5b4e60;
-  font-size: 1.1em;
-  font-weight: 300;
-}
-.cbp-spmenu a.first {
-margin-top: 46px; 
-}
-.cbp-spmenu a.white {
-color:#fff;
-}
-.cbp-spmenu a:hover {
-  background: #34314c
-  color:#fff;
-text-decoration:none;
+  color: #bbb;
+       font-size: 0.7em;
+    line-height: 2.2em;
+    padding-left: 2%;
 }
 
-.cbp-spmenu a:active {
-  background: #34314c;
-  color: #fff;
+.search_close {
+  background: red;
+  padding: 1% 5%;
 }
+@media only screen and (max-width:769px) {
+.article_search h2 {
+  font-size: 2em;
+}
+.responsive {
+  font-size: 2em;
+  }
+  .search_right{
+    float: none;
+    width: 90%;
+  }
+  .search_left{
+    float: none;
+    width: 90%;
+  }
 
+}
 /* Orientation-dependent styles for the content of the menu */
 
 .cbp-spmenu-vertical {
@@ -824,10 +865,6 @@ text-decoration:none;
   height: 100%;
   top: 0;
   z-index: 1000;
-}
-
-.cbp-spmenu-vertical a {
-  padding: 1em;
 }
 
 /* Vertical menu that slides from the left or right */
@@ -892,7 +929,6 @@ margin-left: 2%;
     position: relative;
     margin-top: 3%;
     height: auto;
-        min-height: 530px;
 }
 
 #newsletterform .wrap {
@@ -965,7 +1001,7 @@ margin-left: 2%;
     height: 48px;
     position: absolute;
     left: 120px;
-    top: 210px;
+    top: 170px;
 }
 
 #newsletterform #response {
@@ -1199,7 +1235,6 @@ color: #fff;
 width: 30%;
 border: none;
 margin-left: 0;
-position: absolute;
 border : 1px solid transparent;
 -webkit-transition: all 0.1s ease-in; /*safari and chrome */
  -o-transition: all 0.1s ease-in; /* opera */
@@ -1380,7 +1415,9 @@ position: relative;
 .citation_container {
   display:block;
   clear:both;
-width:90%; min-height:350px; height:auto; margin:8% auto;
+    width: 89%;
+    height: auto;
+    padding: 5%;
   }
 .citation {
   padding:.5em;
@@ -1640,6 +1677,32 @@ padding-top: 0.5em;
     overflow: hidden;
     background-color: #fff;
 }
+
+.big_headlines {
+  height: auto;
+      padding: 0% 0% 1% 2%;
+    background: #fff;
+    max-width: 1030px;
+}
+
+.big_headlines a:hover {
+opacity: 0.7;
+cursor: pointer;
+}
+
+.big_headlines_title {
+  font-size: 2.5em;
+  line-height: 1.1em;
+  margin-top: 1.5%;
+}
+
+.big_headlines_excerp {
+max-width: 600px;
+padding: 3% 0;
+line-height: 1.3em;
+}
+
+
 .grey 
 {
 background: #ffc952; /* Old browsers */
@@ -1665,13 +1728,13 @@ text-decoration:none;
 }
 
 .item {
-width:20%;
+width:30%;
 border-radius: 0.8em;
 float:left;
 font-size: 1rem;
 margin-right:2em;
 margin-bottom:1.5em;
-min-height: 350px;
+/* min-height: 350px; */
 background: #fff;
 text-shadow:none;
 cursor: pointer;
@@ -1877,6 +1940,7 @@ font-family: 'Montserrat',  "Myriad Pro", Helvetica, Georgia, sans-serif; font-w
   background: #fff url(http://static.tumblr.com/ftv85bp/MIXmud4tx/search-icon.png) no-repeat 10px center;
   width: 55px;
   border: none;
+  color: transparent;
   -webkit-transition: all .5s;
   -moz-transition: all .5s;
   transition: all .5s;
@@ -2037,7 +2101,7 @@ padding:0;
 @media only screen and (min-width: 768px) {
   .cd-gallery-container {
     margin: 0.2em auto 0 auto;
-padding: 1.5em 3em;
+padding: 1em;
   }
 }
 
@@ -2172,7 +2236,6 @@ padding:5px;
 }
 .cd-gallery li {
   position: relative;
-  margin-bottom: 1em;
 -webkit-transition: all 2s; /* Safari */
     transition: all 2s;
 }

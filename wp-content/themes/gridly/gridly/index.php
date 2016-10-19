@@ -87,7 +87,7 @@ $(window).load(function() {
           <li data-type="red" class="is-visible">
             <?php
             $args = array( 
-              'numberposts' => 6, 
+              'numberposts' => 7, 
               'order' => 'DESC'
             );// CHECK FUNCTION.PHP LINE 104 FOR NUMBERPOSTS
             $theposts = get_posts( $args );
@@ -201,8 +201,21 @@ $(window).load(function() {
         </ul>
       </li>
     </ul> <!-- cd-gallery -->
+      <div class="big_headlines">
+        <p class="category">LA PRATIQUE</p>
+        <a>
+          <h2 class="big_headlines_title">
+            Les 14 lignes de Shakespeare, les 4 saisons de Vivaldi, le bleu de Picasso, Lou Reed qui "cherchait une bonne phrase puis tournait autour" : se fixer un cadre encourage la créativité.
+          </h2>
+          <p class="big_headlines_excerp">
+          Nos représentations du monde se font par des perceptions ou des interactions ayant leurs cadres. Se poser des limites permet de les repousser et ouvre la voie à l'improvisation.
+          </p>
+        </a>
+    </div>
 	</div>
 </div>
+
+
 <div class="grey">
 
     <div class="bande-son">
@@ -237,7 +250,7 @@ Il nous faut de toute manière révéler cette force, la manifester dans ses fon
 <h3>Les plus populaires</h3>
   <ul class="cd-item-wrapper">
 <?php 
-$popularpost = new WP_Query( array( 'posts_per_page' => 4, 'meta_key' => 'wpb_post_views_count', 'orderby' => 'meta_value_num', 'order' => 'DESC'  ) );
+$popularpost = new WP_Query( array( 'posts_per_page' => 3, 'meta_key' => 'wpb_post_views_count', 'orderby' => 'meta_value_num', 'order' => 'DESC'  ) );
 while ( $popularpost->have_posts() ) : $popularpost->the_post();?>
 <li data-type="red" class="is-visible">
 <a href="<?php the_permalink() ?>"><div class="item">

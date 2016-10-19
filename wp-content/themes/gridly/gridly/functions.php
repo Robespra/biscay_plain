@@ -71,7 +71,7 @@ function my_blockquote($atts, $content) {
 
 function number_of_posts_on_archive($query){
     if ($query->is_category) {
-            $query->set('posts_per_page', 6);
+            $query->set('posts_per_page', 7);
    }
     return $query;
 }

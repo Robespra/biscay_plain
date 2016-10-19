@@ -1,5 +1,4 @@
 <?php get_header(); ?>
-
 <body class="cbp-spmenu-push">
 <div class="padding10"></div>
 <div class="la-anim-10"></div>
@@ -10,12 +9,91 @@
 <a href="http://www.biscaypla.in"><img class="logo" src="<?php echo get_template_directory_uri(); ?>/images/headerimage_1.svg" alt="Biscay Plain, création artistique et psychologie de l'Art"/></a>  
 <!-- body has the class "cbp-spmenu-push" -->
 <nav class="cbp-spmenu cbp-spmenu-vertical cbp-spmenu-right" id="cbp-spmenu-s2">
-<div id="search"><?php get_search_form(); ?> </div>
+<div class="article_search">
+ <h2>Rechercher</h2>
+<div id="search">
+
+<?php get_search_form(); ?> 
+ </div>
+
+</div>
+<section class="search_left">
+  <h3>DERNIERS ARTICLES</h3>
+  <?php
+            $args = array( 
+              'numberposts' => 7, 
+              'order' => 'DESC'
+            );// CHECK FUNCTION.PHP LINE 104 FOR NUMBERPOSTS
+            $theposts = get_posts( $args );
+            foreach($theposts as $post) :
+            setup_postdata($post);
+            ?>
+            <a class="" href="<?php the_permalink() ?>"><?php the_title(); ?></a>
+            <?php
+            endforeach;
+            wp_reset_postdata();
+            ?>
+<span class="separator"></span>
+<h3>LA PRATIQUE</h3>
+<?php
+            $args = array( 
+              'numberposts' => 7, 
+              'category_name' => 'poiesis-core', 
+              'orderby' => 'date', 
+              'order' => 'DESC'
+            );// CHECK FUNCTION.PHP LINE 104 FOR NUMBERPOSTS
+            $theposts = get_posts( $args );
+            foreach($theposts as $post) :
+            setup_postdata($post);
+            ?>
+            <a class="" href="<?php the_permalink() ?>"><?php the_title(); ?></a>
+            <?php
+            endforeach;
+            wp_reset_postdata();
+            ?>
+</section>
+<section class="search_right">
+<h3>LA THEORIE</h3>
+<?php
+            $args = array( 
+              'numberposts' => 7, 
+              'category_name' => 'poiesis-core', 
+              'orderby' => 'date', 
+              'order' => 'DESC'
+            );// CHECK FUNCTION.PHP LINE 104 FOR NUMBERPOSTS
+            $theposts = get_posts( $args );
+            foreach($theposts as $post) :
+            setup_postdata($post);
+            ?>
+            <a class="" href="<?php the_permalink() ?>"><?php the_title(); ?></a>
+            <?php
+            endforeach;
+            wp_reset_postdata();
+            ?>
+<span class="separator"></span>
+<h3>AILLEURS SUR LE WEB</h3>
+<?php
+            $args = array( 
+              'numberposts' => 7, 
+              'category_name' => 'selection', 
+              'orderby' => 'date', 
+              'order' => 'DESC'
+            );// CHECK FUNCTION.PHP LINE 104 FOR NUMBERPOSTS
+            $theposts = get_posts( $args );
+            foreach($theposts as $post) :
+            setup_postdata($post);
+            ?>
+            <a class="" href="<?php the_permalink() ?>"><?php the_title(); ?></a>
+            <?php
+            endforeach;
+            wp_reset_postdata();
+            ?>
+</section>
 
 </nav>
 <section class="buttonset">
 <!-- Class "cbp-spmenu-open" gets applied to menu and "cbp-spmenu-push-toleft" or "cbp-spmenu-push-toright" to the body -->
-<div id="showRight" class="closed"><img src="<?php echo get_template_directory_uri(); ?>/images/menu.svg"/></div></section>
+<div id="showRight" class="closed"><img src="http://static.tumblr.com/ftv85bp/MIXmud4tx/search-icon.png"/></div></section>
 </div>
 <!-- // header -->   
 </header>   
@@ -78,7 +156,7 @@ fjs.parentNode.insertBefore(js, fjs);
           <li data-type="red" class="is-visible">
             <?php
             $args = array( 
-              'numberposts' => 4, 
+              'numberposts' => 3, 
               'order' => 'DESC'
             );// CHECK FUNCTION.PHP LINE 104 FOR NUMBERPOSTS
             $theposts = get_posts( $args );
@@ -178,13 +256,14 @@ $(window).scroll(function(){
       showRight.onclick = function() {
         classie.toggle( this, 'active' );
         classie.toggle( menuRight, 'cbp-spmenu-open' );
+        $('#focus').trigger('focus')
       };
 $('#showRight').click(function() {
         if($('#showRight').hasClass('closed')) {
-            $(this).removeClass('closed').addClass('open').html('<img height="30px" style="position:fixed" src="<?php echo get_template_directory_uri();?>/images/deletebttn.png"/>');
+            $(this).removeClass('closed').addClass('open').html('<div class="search_close">FERMER<div/>');
             $('#fade').fadeIn(); }
         else if($('#showRight').hasClass('open')) {
-            $(this).removeClass('open').addClass('closed').html('<img src="<?php echo get_template_directory_uri(); ?>/images/menu.svg"/>');
+            $(this).removeClass('open').addClass('closed').html('<img src="http://static.tumblr.com/ftv85bp/MIXmud4tx/search-icon.png"/>');
             $('#fade').fadeOut(); }
     });
     </script> 

@@ -3,10 +3,10 @@
 action="<?php bloginfo('url'); ?>/">
 
  <div>
-<input class="responsive" type="text" value="<?php the_search_query(); ?>"
-name="s" id="s" />
+ <p>Entrez votre recherche ci-dessous</p>
+<input id="focus" type="text" class="responsive" value="<?php the_search_query(); ?>" autofocus="autofocus"/></input>
 
-<button type="submit" name="submission" value="Submit 1" class="btn-search">RECHERCHER</button>
+<button style="display:none;" type="submit" name="submission" value="Submit 1" class="btn-search"></button>
     </div>
 
 </form>
