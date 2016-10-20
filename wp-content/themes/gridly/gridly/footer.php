@@ -4,18 +4,27 @@
 
 </div>
 <div class="social footerico">
-<li><a style="color:#e05d4d;" href="http://twitter.com/home?status=Intéressant... http://www.biscaypla.in" title="Partager cet article sur Twitter!" target="_blank"><img class="lazy" src="<?php bloginfo('template_url'); ?>/images/social_twitter.svg"/></a></li>
-  <li><a href="https://plus.google.com/share?url=http://www.poiesis-app.com" data-trackevent="Share: Google+" target="blank"><img class="lazy" src="<?php bloginfo('template_url'); ?>/images/social_g+.svg"/></a></li>
- <li><a style="color:#e05d4d;" href="http://www.facebook.com/sharer.php?u=http://www.poiesis-app.com target="blank"><img class="lazy" src="<?php bloginfo('template_url'); ?>/images/social_fb.svg"/></a></li>
-<li><a href="http://pinterest.com/pin/create/button/"  count-layout="none" target="blank"><img class="lazy" src="<?php bloginfo('template_url'); ?>/images/social_pint.svg"/></a> </li>
-</div><a>A PROPOS</a>/<a>TAMIS</a>/<a>NEWSLETTER</a>/<a>CONTACT</a>
+<li><a style="color:#e05d4d;" href="http://twitter.com/home?status=Intéressant... http://www.biscaypla.in" title="Partager cet article sur Twitter!" target="_blank" onclick="track('Click-social-footer-twitter','Click-social-footer-twitter')"><img class="lazy" src="<?php bloginfo('template_url'); ?>/images/social_twitter.svg"/></a></li>
+  <li><a href="https://plus.google.com/share?url=http://www.poiesis-app.com" data-trackevent="Share: Google+" target="blank" onclick="track('Click-social-footer-gplus','Click-social-footer-gplus')"><img class="lazy" src="<?php bloginfo('template_url'); ?>/images/social_g+.svg"/></a></li>
+ <li><a style="color:#e05d4d;" href="http://www.facebook.com/sharer.php?u=http://www.poiesis-app.com target="blank" onclick="track('Click-social-footer-facebook','Click-social-footer-facebook')"><img class="lazy" src="<?php bloginfo('template_url'); ?>/images/social_fb.svg"/></a></li>
+<li><a href="http://pinterest.com/pin/create/button/"  count-layout="none" target="blank" onclick="track('Click-social-footer-pinterest','Click-social-footer-pinterest')"><img class="lazy" src="<?php bloginfo('template_url'); ?>/images/social_pint.svg"/></a> </li>
+</div><a onclick="track('Click-social-footer-about','Click-social-footer-about')">A PROPOS</a>/<a onclick="track('Click-social-footer-tamis','Click-social-footer-tamis')">TAMIS</a>/<a onclick="track('Click-social-footer-newsletter','Click-social-footer-newsletter')">NEWSLETTER</a>/<a onclick="track('Click-social-footer-contact','Click-social-footer-contact')">CONTACT</a>
 <div class="app-footer">
-<a href="" title="">
+<a href="#" title="hacedor logo footer" onclick="track('Click-logofooter','Click-logofooter')">
 <img class="app-footer-img" src="<?php bloginfo('template_url'); ?>/images/footerimage_1.svg" alt="Logo Poïesis"/>
 </a>
 </div><!-- // app-footer -->  
 </div>
 </div><!-- // wrap -->   
+<script>
+        function track(name,label){
+        ga('send', 'event', name, 'click', label, {
+            hitCallback: function(){
+            console.log('Event sent to Google Analytics');
+                }
+            });
+        }
+</script>
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),

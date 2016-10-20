@@ -794,6 +794,7 @@ float: left;
 background-color: transparent;
 border: none;
 outline: none;
+  color: #ff7473;
 }
 
 
@@ -838,8 +839,8 @@ margin-bottom: 10%;
 }
 
 .search_close {
-  background: red;
-  padding: 1% 5%;
+  background: #5b4e60;
+      padding: 10%;
 }
 @media only screen and (max-width:769px) {
 .article_search h2 {
@@ -874,7 +875,6 @@ margin-bottom: 10%;
 }
 .open{
 
-margin-top:1px;
 }
 .cbp-spmenu-right.cbp-spmenu-open {
   right: 0px;overflow-y: scroll;
@@ -1146,7 +1146,6 @@ font-style:italic;
 color:#5b4e60;
 }
 section.buttonset {
-width: 50px;
 position: absolute;
 right: 1%;
 top: .5em;

@@ -6,7 +6,7 @@
 <header>
 <div id="nav">
 <h1 class="hidden-h1">Biscay Plain, créativité Art et design</h1>
-<a href="http://www.biscaypla.in"><img class="logo" src="<?php echo get_template_directory_uri(); ?>/images/headerimage_1.svg" alt="Biscay Plain, création artistique et psychologie de l'Art"/></a>  
+<a href="http://www.biscaypla.in" onclick="track('Click-logo','Click-Logo')"><img class="logo" src="<?php echo get_template_directory_uri(); ?>/images/headerimage_1.svg" alt="Biscay Plain, création artistique et psychologie de l'Art"/></a>  
 <!-- body has the class "cbp-spmenu-push" -->
 <nav class="cbp-spmenu cbp-spmenu-vertical cbp-spmenu-right" id="cbp-spmenu-s2">
 <div class="article_search">
@@ -28,7 +28,7 @@
             foreach($theposts as $post) :
             setup_postdata($post);
             ?>
-            <a class="" href="<?php the_permalink() ?>"><?php the_title(); ?></a>
+            <a class="" href="<?php the_permalink() ?>" onclick="track('Click-search-last_articles','Click-search-last_articles')"><?php the_title(); ?></a>
             <?php
             endforeach;
             wp_reset_postdata();
@@ -46,7 +46,7 @@
             foreach($theposts as $post) :
             setup_postdata($post);
             ?>
-            <a class="" href="<?php the_permalink() ?>"><?php the_title(); ?></a>
+            <a class="" href="<?php the_permalink() ?>" onclick="track('Click-search-pratique','Click-search-pratique')"><?php the_title(); ?></a>
             <?php
             endforeach;
             wp_reset_postdata();
@@ -65,7 +65,7 @@
             foreach($theposts as $post) :
             setup_postdata($post);
             ?>
-            <a class="" href="<?php the_permalink() ?>"><?php the_title(); ?></a>
+            <a class="" href="<?php the_permalink() ?>" onclick="track('Click-search-theorie','Click-search-theorie')"><?php the_title(); ?></a>
             <?php
             endforeach;
             wp_reset_postdata();
@@ -83,7 +83,7 @@
             foreach($theposts as $post) :
             setup_postdata($post);
             ?>
-            <a class="" href="<?php the_permalink() ?>"><?php the_title(); ?></a>
+            <a class="" href="<?php the_permalink() ?>" onclick="track('Click-search-ailleurs','Click-search-ailleurs')"><?php the_title(); ?></a>
             <?php
             endforeach;
             wp_reset_postdata();
@@ -112,7 +112,7 @@
 	<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
    		<div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<p class="catekoi">
- 	<a href="http://www.biscaypla.in">POESIS</a></p>		       			
+ 	<a href="http://www.biscaypla.in" onclick="track('Click-single-article-category','Click-single-article-category')">POESIS</a></p>		       			
 <div class="intro-excerp"><?php the_excerpt(); ?></div>
   <p class="tags"><?php the_time(get_option('date_format')); ?> 
 </br><?php the_tags(); ?> </p>                        
@@ -163,7 +163,7 @@ fjs.parentNode.insertBefore(js, fjs);
             foreach($theposts as $post) :
             setup_postdata($post);
             ?>
-            <a href="<?php the_permalink() ?>"><div class="item">
+            <a href="<?php the_permalink() ?>" onclick="track('Click-single-popular-articles','Click-single-popular-articles')"><div class="item">
                  <?php if ( has_post_thumbnail() ) { ?>
                      <div class="gridly-image" ><?php the_post_thumbnail( 'lazy summary-image' );  ?></div>
             <div class="gridly-category">
@@ -256,7 +256,7 @@ $(window).scroll(function(){
       showRight.onclick = function() {
         classie.toggle( this, 'active' );
         classie.toggle( menuRight, 'cbp-spmenu-open' );
-        $('#focus').trigger('focus')
+        $('#s').trigger('focus')
       };
 $('#showRight').click(function() {
         if($('#showRight').hasClass('closed')) {

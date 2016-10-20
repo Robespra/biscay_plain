@@ -1,8 +1,4 @@
 <?php get_header(); ?>
-<div class="successtop">
-<?php  
-if (isset($_GET['s'])) echo "<div class=\"alert alert-success text-center\">".$_GET['s']."</div>";   
-elseif (isset($_GET['e'])) echo "<div class=\"alert alert-error text-center\">".$_GET['e']."</div>";?></div>
 <body class="cbp-spmenu-push">
 <script type="application/ld+json">
 {
@@ -46,7 +42,7 @@ $(window).load(function() {
 <div id="wrap">
 <!-- body has the class "cbp-spmenu-push" -->
 <h1 class="hidden-h1">hacedor, concentré d'articles sur le jeu de la créativité</h1>
-<a href="#"><img class="logo-top"src="<?php bloginfo('template_url'); ?>/images/headerimage_1.svg" alt="Logo Poïesis"/></a>
+<a href="#" onclick="track('Click-logo-top','Click-logo-top')"><img class="logo-top"src="<?php bloginfo('template_url'); ?>/images/headerimage_1.svg" alt="Logo Poïesis"/></a>
 <div class="double_container">
 <div class="double_left">
 <img class=" " src="<?php bloginfo('template_url'); ?>/images/hero_news.svg" alt="Biscay Newsletter illustration"/>
@@ -64,9 +60,9 @@ $(window).load(function() {
       <nav class="cd-filter">
         <ul>
           <li class="placeholder"><a data-type="red" href="#0">Derniers articles</a> <!-- selected option on mobile --></li> 
-          <li><a class="selected" data-type="red" href="#0">Derniers articles</a></li>
-          <li><a data-type="green" href="#0">La pratique</a></li>
-          <li><a data-type="blue" href="#0">La théorie</a></li>
+          <li><a class="selected" data-type="red" href="#0" onclick="track('Click-index-navbar-derniers_articles','Click-index-navbar-derniers_articles')">Derniers articles</a></li>
+          <li><a data-type="green" href="#0" onclick="track('Click-index-navbar-pratique','Click-index-navbar-pratique')">La pratique</a></li>
+          <li><a data-type="blue" href="#0" onclick="track('Click-index-navbar-theorie','Click-index-navbar-theorie')">La théorie</a></li>
           <!-- <li><a data-type="white" href="#0">Les jeux</a></li> -->
         <li>
           <div id="search-index">
@@ -94,7 +90,7 @@ $(window).load(function() {
             foreach($theposts as $post) :
             setup_postdata($post);
             ?>
-            <a href="<?php the_permalink() ?>"><div class="item">
+            <a href="<?php the_permalink() ?>" onclick="track('Click-index-articles-derniers','Click-index-articles-derniers')"><div class="item">
                  <?php if ( has_post_thumbnail() ) { ?>
                      <div class="gridly-image" ><?php the_post_thumbnail( 'lazy summary-image' );  ?></div>
             <div class="gridly-category">
@@ -113,7 +109,7 @@ $(window).load(function() {
             endforeach;
             wp_reset_postdata();
             ?>
-            <a href="lienpub"><div class="item">
+            <a href="lienpub" onclick="track('Click-index-articles-pub-derniers','Click-index-articles-pub-derniers')"><div class="item">
                      <div class="gridly-image"><img class="l" src="<?php bloginfo('template_url'); ?>/images/pub_index.jpg"></div>
             <div class="gridly-category">
               <p class="category pub_index">PUBLICITE</p>
@@ -136,7 +132,7 @@ $(window).load(function() {
             foreach($theposts as $post) :
             setup_postdata($post);
             ?>
-            <a href="<?php the_permalink() ?>"><div class="item">
+            <a href="<?php the_permalink() ?>" onclick="track('Click-index-articles-pratique','Click-index-articles-pratique')"><div class="item">
                  <?php if ( has_post_thumbnail() ) { ?>
                      <div class="gridly-image" ><?php the_post_thumbnail( 'lazy summary-image');  ?></div>
             <div class="gridly-category">
@@ -152,7 +148,7 @@ $(window).load(function() {
             endforeach;
             wp_reset_postdata();
             ?>
-            <a href="lienpub"><div class="item">
+            <a href="lienpub" onclick="track('Click-index-articles-pratique','Click-index-articles-pratique')"><div class="item">
                      <div class="gridly-image"><img class="l" src="<?php bloginfo('template_url'); ?>/images/pub_index.jpg"> </div>
             <div class="gridly-category">
               <p class="category pub_index">PUBLICITE</p>
@@ -170,7 +166,7 @@ $(window).load(function() {
             foreach($theposts as $post) :
             setup_postdata($post);
             ?>
-            <a href="<?php the_permalink() ?>"><div class="item">
+            <a href="<?php the_permalink() ?>" onclick="track('Click-index-articles-theorie','Click-index-articles-theorie')"><div class="item">
                  <?php if ( has_post_thumbnail() ) { ?>
                      <div class="gridly-image"><?php the_post_thumbnail( 'lazy summary-image' );  ?></div>
               <div class="gridly-category">
@@ -187,7 +183,7 @@ $(window).load(function() {
             endforeach;
             wp_reset_postdata();
             ?>     
-            <a href="lienpub"><div class="item">
+            <a href="lienpub" onclick="track('Click-index-articles-pub-theorie','Click-index-articles-pub-theorie')"><div class="item">
                      <div class="gridly-image"><img class="l" src="<?php bloginfo('template_url'); ?>/images/pub_index.jpg"></div>
             <div class="gridly-category">
               <p class="category pub_index ">PUBLICITE</p>
@@ -203,9 +199,9 @@ $(window).load(function() {
     </ul> <!-- cd-gallery -->
       <div class="big_headlines">
         <p class="category">LA PRATIQUE</p>
-        <a>
+        <a onclick="track('Click-index-bigheadlines','Click-index-bigheadlines')" >
           <h2 class="big_headlines_title">
-            Les 14 lignes de Shakespeare, les 4 saisons de Vivaldi, le bleu de Picasso, Lou Reed qui "cherchait une bonne phrase puis tournait autour" : se fixer un cadre encourage la créativité.
+            Les 14 lignes de Shakespeare, le bleu de Picasso, Lou Reed qui "tournait autour d'une phrase" : se fixer un cadre stimule la créativité.
           </h2>
           <p class="big_headlines_excerp">
           Nos représentations du monde se font par des perceptions ou des interactions ayant leurs cadres. Se poser des limites permet de les repousser et ouvre la voie à l'improvisation.
@@ -236,7 +232,7 @@ $(window).load(function() {
 <div id="container-index-bottom">
 <div class="clear padding20"></div>
 <div class="citation_container">
-<a href="http://localhost:8888/2016/01/20/les-motivations-de-la-creativite/">
+<a href="http://localhost:8888/2016/01/20/les-motivations-de-la-creativite/" onclick="track('Click-index-citation','Click-index-citation')">
 <div class="citation">
 Il nous faut de toute manière révéler cette force, la manifester dans ses fonctions tout comme elle se manifeste en nous.
 <p>Paul Klee</p>
@@ -253,7 +249,7 @@ Il nous faut de toute manière révéler cette force, la manifester dans ses fon
 $popularpost = new WP_Query( array( 'posts_per_page' => 3, 'meta_key' => 'wpb_post_views_count', 'orderby' => 'meta_value_num', 'order' => 'DESC'  ) );
 while ( $popularpost->have_posts() ) : $popularpost->the_post();?>
 <li data-type="red" class="is-visible">
-<a href="<?php the_permalink() ?>"><div class="item">
+<a href="<?php the_permalink() ?>" onclick="track('Click-index-populaires-footer','Click-index-populaires-footer')"><div class="item">
                  <?php if ( has_post_thumbnail() ) { ?>
                      <div class="gridly-image pop"><?php the_post_thumbnail( 'lazy summary-image' );  ?></div>
             <div class="gridly-category">
