@@ -20,26 +20,10 @@
 <link rel="canonical" href="www.biscaypla.in" />
 <meta property="og:image" content="https://motif.imgix.com/i?url=http%3A%2F%2Fwww.biscaypla.in%2F&image_url=null&color=5b4e60&logo_url=https%3A%2F%2Flogo.clearbit.com%2Fwww.biscaypla.in%3Fformat%3Dpng%26size%3D300&logo_alignment=bottom%2Cright&text_alignment=top%2Cleft&logo_padding=0&font_family=Avenir%20Next%20Demi%2CBold&text_color=ffffff" />
 <meta property="og:description" content="hacedor est un site sur la créativité." />
-<link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
 <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/style.css"/>
+<!-- <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/osmplayer/templates/default/css/osmplayer_default.css"> -->
 <script type='text/javascript' src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 
-<script src="<?php echo get_template_directory_uri(); ?>/js/bouncyfilter.js" defer></script>
-<script src="<?php echo get_template_directory_uri(); ?>/js/functions.js" defer></script>
-<script src="<?php echo get_template_directory_uri(); ?>/js/modernizr-2.6.2-respond-1.1.0.min.js"></script>
-<!-- Include the core jQuery and jQuery UI -->
-<script type='text/javascript' src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.2/jquery-ui.min.js"></script>
-<!-- Include the core media player JavaScript. -->
-<script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/osmplayer/bin/osmplayer.compressed.js"></script>
-<!-- Include the DarkHive ThemeRoller jQuery UI theme. -->
-<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/osmplayer/jquery-ui/dark-hive/jquery-ui.css">
-<!-- Include the Default template CSS and JavaScript. -->
-<!-- <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/osmplayer/templates/default/css/osmplayer_default.css"> -->
-<script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/osmplayer/templates/default/osmplayer.default.js"></script>
-<script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/osmplayer/src/osmplayer.iscroll.js"></script>
-<script src="<?php echo get_template_directory_uri(); ?>/js/newsletter_sign_up_lib.js"></script>
-<script src="<?php echo get_template_directory_uri(); ?>/js/jquery.lazy.min.js"></script>
 <!--[if lt IE 9]>
 	<script src="http://css3-mediaqueries-js.googlecode.com/files/css3-mediaqueries.js"></script>
 	<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
@@ -65,5 +49,15 @@ function getsupport ( selectedtype )
   document.supportform.supporttype.value = selectedtype ;
   document.supportform.submit() ;
 }
+</script>
+<script>
+window.addEventListener(
+    'load',
+    function load()
+    {
+        window.removeEventListener('load', load, false);
+        document.body.classList.remove('loading');
+    },
+    false);
 </script>
 </head>

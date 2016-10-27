@@ -1,3 +1,5 @@
+<?php
+
 <?php get_header(); ?>
 <body class="cbp-spmenu-push loading">
 <div class="padding10"></div>
@@ -117,13 +119,15 @@
   <h2 class="header"><?php the_title(); ?></h2>
 <div class="clear padding60"></div>
 <div class="clear padding60"></div>
-  <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
-      <div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-  <p class="catekoi">
-  <a href="http://www.biscaypla.in" onclick="track('Click-single-article-category','Click-single-article-category')">POESIS</a></p>               
-<div class="intro-excerp"><?php the_excerpt(); ?></div>                       
+	<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
+   		<div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+	<p class="catekoi">
+ 	<a href="http://www.biscaypla.in" onclick="track('Click-single-article-category','Click-single-article-category')">POESIS</a></p>		       			
+<div class="intro-excerp"><?php the_excerpt(); ?></div>
+  <p class="tags"><?php the_time(get_option('date_format')); ?> 
+</br><?php the_tags(); ?> </p>                        
 <div class="padding20"></div> 
-               <?php the_content(); 
+           		 <?php the_content(); 
 wpb_set_post_views(get_the_ID());
 ?> 
 <ul id="share">
@@ -273,3 +277,5 @@ $('#showRight').click(function() {
             $('#fade').fadeOut(); }
     });
     </script> 
+
+    ?>

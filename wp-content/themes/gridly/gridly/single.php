@@ -1,12 +1,23 @@
 <?php get_header(); ?>
-<body class="cbp-spmenu-push">
+<body class="cbp-spmenu-push loading">
 <div class="padding10"></div>
 <div class="la-anim-10"></div>
 <section>
 <header>
+<div class="logo_header">
+<h1 class="hidden-h1">hacedor, concentré d'articles sur le jeu de la créativité</h1>
+<a href="http://www.biscaypla.in" onclick="track('Click-logo-top','Click-logo-top')" rel="canonical"><img class="logo-top"src="<?php bloginfo('template_url'); ?>/images/headerimage_1.svg" alt="Logo Poïesis"/></a>
+<div class="cs-loader">
+  <div class="cs-loader-inner">
+    <label> ●</label>
+    <label> ●</label>
+    <label> ●</label>
+  </div>
+</div>
 <div id="nav">
-<h1 class="hidden-h1">Biscay Plain, créativité Art et design</h1>
-<a href="http://www.biscaypla.in" onclick="track('Click-logo','Click-Logo')"><img class="logo" src="<?php echo get_template_directory_uri(); ?>/images/headerimage_1.svg" alt="Biscay Plain, création artistique et psychologie de l'Art"/></a>  
+<section class="buttonset">
+<!-- Class "cbp-spmenu-open" gets applied to menu and "cbp-spmenu-push-toleft" or "cbp-spmenu-push-toright" to the body -->
+<div id="showRight" class="closed"><img src="<?php bloginfo('template_url'); ?>/images/search.svg"/></div></section>
 <!-- body has the class "cbp-spmenu-push" -->
 <nav class="cbp-spmenu cbp-spmenu-vertical cbp-spmenu-right" id="cbp-spmenu-s2">
 <div class="article_search">
@@ -91,9 +102,6 @@
 </section>
 
 </nav>
-<section class="buttonset">
-<!-- Class "cbp-spmenu-open" gets applied to menu and "cbp-spmenu-push-toleft" or "cbp-spmenu-push-toright" to the body -->
-<div id="showRight" class="closed"><img src="http://static.tumblr.com/ftv85bp/MIXmud4tx/search-icon.png"/></div></section>
 </div>
 <!-- // header -->   
 </header>   
@@ -263,7 +271,7 @@ $('#showRight').click(function() {
             $(this).removeClass('closed').addClass('open').html('<div class="search_close">FERMER<div/>');
             $('#fade').fadeIn(); }
         else if($('#showRight').hasClass('open')) {
-            $(this).removeClass('open').addClass('closed').html('<img src="http://static.tumblr.com/ftv85bp/MIXmud4tx/search-icon.png"/>');
+            $(this).removeClass('open').addClass('closed').html('<img src="<?php bloginfo('template_url'); ?>/images/search.svg"/>');
             $('#fade').fadeOut(); }
     });
     </script> 

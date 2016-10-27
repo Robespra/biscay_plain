@@ -1,5 +1,6 @@
 <?php get_header(); ?>
-<body class="cbp-spmenu-push">
+
+<body class="cbp-spmenu-push loading">
 <script type="application/ld+json">
 {
   "@context": "http://schema.org",
@@ -41,8 +42,17 @@ $(window).load(function() {
 </script>
 <div id="wrap">
 <!-- body has the class "cbp-spmenu-push" -->
+<div class="logo_header">
 <h1 class="hidden-h1">hacedor, concentré d'articles sur le jeu de la créativité</h1>
-<a href="#" onclick="track('Click-logo-top','Click-logo-top')"><img class="logo-top"src="<?php bloginfo('template_url'); ?>/images/headerimage_1.svg" alt="Logo Poïesis"/></a>
+<a href="http://www.biscaypla.in/" onclick="track('Click-logo-top','Click-logo-top')" rel="canonical"><img class="logo-top"src="<?php bloginfo('template_url'); ?>/images/headerimage_1.svg" alt="Logo Poïesis"/></a>
+<div class="cs-loader">
+  <div class="cs-loader-inner">
+    <label> ●</label>
+    <label> ●</label>
+    <label> ●</label>
+  </div>
+</div>
+</div>
 <div class="double_container">
 <div class="double_left">
 <img class=" " src="<?php bloginfo('template_url'); ?>/images/hero_news.svg" alt="Biscay Newsletter illustration"/>
@@ -109,13 +119,13 @@ $(window).load(function() {
             endforeach;
             wp_reset_postdata();
             ?>
-            <a href="lienpub" onclick="track('Click-index-articles-pub-derniers','Click-index-articles-pub-derniers')"><div class="item">
-                     <div class="gridly-image"><img class="l" src="<?php bloginfo('template_url'); ?>/images/pub_index.jpg"></div>
+            <a href="https://www.amazon.com/gp/product/B017QLKXN4/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=B017QLKXN4&linkCode=as2&tag=b0002c-20&linkId=1d9346dc1dc06889c2a8a8ec95d4397d" onclick="track('Click-index-articles-pub-derniers','Click-index-articles-pub-derniers')" target="_blank" rel="nofollow"><div class="item">
+                     <div class="gridly-image"><img class="l" src="<?php bloginfo('template_url'); ?>/images/amazon_psychocrea.jpg"></div>
             <div class="gridly-category">
               <p class="category pub_index">PUBLICITE</p>
-              <h2>TITRE
+              <h2>Livre : La psychologie de la créativité
             </h2>       
-            <p class="small">small desxription</p>         
+            <p class="small">Cet ouvrage apporte une synthèse de la littérature scientifique et offre des pistes de réflexion concernant l’Homo creativus. </p>         
             </div><!-- gridly-category -->
             </div><!-- item -->
             </a>
@@ -148,13 +158,15 @@ $(window).load(function() {
             endforeach;
             wp_reset_postdata();
             ?>
-            <a href="lienpub" onclick="track('Click-index-articles-pratique','Click-index-articles-pratique')"><div class="item">
-                     <div class="gridly-image"><img class="l" src="<?php bloginfo('template_url'); ?>/images/pub_index.jpg"> </div>
+
+            <a href="https://www.amazon.com/gp/product/0761169253/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=0761169253&linkCode=as2&tag=b0002c-20&linkId=5e6285d67650ab340329066b832c98b9" onclick="track('Click-index-articles-pratique','Click-index-articles-pratique')" target="_blank" rel="nofollow">
+            <div class="item">
+                     <div class="gridly-image"><img class="l" src="<?php bloginfo('template_url'); ?>/images/amazon_steal.jpg"> </div>
             <div class="gridly-category">
               <p class="category pub_index">PUBLICITE</p>
-              <h2>TITRE
+              <h2>Livre : Steal Like an Artist
             </h2>       
-            <p class="small">small desxription</p>         
+            <p class="small">10 Things Nobody Told You About Being Creative</p>         
             </div><!-- gridly-category -->
             </div><!-- item -->
             </a>
@@ -183,13 +195,14 @@ $(window).load(function() {
             endforeach;
             wp_reset_postdata();
             ?>     
-            <a href="lienpub" onclick="track('Click-index-articles-pub-theorie','Click-index-articles-pub-theorie')"><div class="item">
-                     <div class="gridly-image"><img class="l" src="<?php bloginfo('template_url'); ?>/images/pub_index.jpg"></div>
+            <a href="https://www.amazon.com/gp/product/0521730252/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=0521730252&linkCode=as2&tag=b0002c-20&linkId=7066f78781b3f11ea6b41177efc028a1" onclick="track('Click-index-articles-pub-theorie','Click-index-articles-pub-theorie')" target="_blank" rel="nofollow"><div class="item">
+                     <div class="gridly-image"><img class="l" src="<?php bloginfo('template_url'); ?>/images/amazon_creahandbook.jpg"></div>
             <div class="gridly-category">
               <p class="category pub_index ">PUBLICITE</p>
-              <h2>TITRE
+              <h2>Livre : The Cambridge Handbook of Creativity
             </h2>       
-            <p class="small">small desxription</p>         
+            <p class="small">A comprehensive scholarly handbook on creativity from the most respected psychologists, researchers and educators.</p>      
+            
             </div><!-- gridly-category -->
             </div><!-- item -->
             </a>   
@@ -199,7 +212,7 @@ $(window).load(function() {
     </ul> <!-- cd-gallery -->
       <div class="big_headlines">
         <p class="category">LA PRATIQUE</p>
-        <a onclick="track('Click-index-bigheadlines','Click-index-bigheadlines')" >
+        <a href="http://www.biscaypla.in/les-motivations-de-la-creativite/"onclick="track('Click-index-bigheadlines','Click-index-bigheadlines')" >
           <h2 class="big_headlines_title">
             Les 14 lignes de Shakespeare, le bleu de Picasso, Lou Reed qui "tournait autour d'une phrase" : se fixer un cadre stimule la créativité.
           </h2>
@@ -216,6 +229,9 @@ $(window).load(function() {
 
     <div class="bande-son">
     <h3 style="color:#fff">Vidéos en vrac</h3>
+    <script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/osmplayer/bin/osmplayer.compressed.js"></script>
+<script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/osmplayer/templates/default/osmplayer.default.js"></script>
+<script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/osmplayer/src/osmplayer.iscroll.js"></script>
     <script type="text/javascript">
   $(function() {
     $("#osmplayer").osmplayer({
@@ -232,7 +248,7 @@ $(window).load(function() {
 <div id="container-index-bottom">
 <div class="clear padding20"></div>
 <div class="citation_container">
-<a href="http://localhost:8888/2016/01/20/les-motivations-de-la-creativite/" onclick="track('Click-index-citation','Click-index-citation')">
+<a href="http://www.biscaypla.in/les-motivations-de-la-creativite/" onclick="track('Click-index-citation','Click-index-citation')">
 <div class="citation">
 Il nous faut de toute manière révéler cette force, la manifester dans ses fonctions tout comme elle se manifeste en nous.
 <p>Paul Klee</p>
@@ -299,6 +315,7 @@ if(!Modernizr.svg) {
     });
 }
 </script>
-
+<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/osmplayer/jquery-ui/dark-hive/jquery-ui.css">
+<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.2/jquery-ui.min.js"></script>
 </div>
 </body>
