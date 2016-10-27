@@ -32,7 +32,7 @@
   <h3>DERNIERS ARTICLES</h3>
   <?php
             $args = array( 
-              'numberposts' => 7, 
+              'numberposts' => 30, 
               'order' => 'DESC'
             );// CHECK FUNCTION.PHP LINE 104 FOR NUMBERPOSTS
             $theposts = get_posts( $args );
@@ -48,7 +48,7 @@
 <h3>LA PRATIQUE</h3>
 <?php
             $args = array( 
-              'numberposts' => 7, 
+              'numberposts' => 30, 
               'category_name' => 'poiesis-core', 
               'orderby' => 'date', 
               'order' => 'DESC'
@@ -67,7 +67,7 @@
 <h3>LA THEORIE</h3>
 <?php
             $args = array( 
-              'numberposts' => 7, 
+              'numberposts' => 30, 
               'category_name' => 'poiesis-core', 
               'orderby' => 'date', 
               'order' => 'DESC'
@@ -85,7 +85,7 @@
 <h3>AILLEURS SUR LE WEB</h3>
 <?php
             $args = array( 
-              'numberposts' => 7, 
+              'numberposts' => 30, 
               'category_name' => 'selection', 
               'orderby' => 'date', 
               'order' => 'DESC'
