@@ -111,7 +111,7 @@ $(window).load(function() {
               <h2><?php the_title(); ?>
             </h2>
             <?php } ?>         
-            <p class="small"><?php echo limit_words(get_the_excerpt(), '30'); ?> [...]</p>         
+            <p class="small"><?php echo limit_words(get_the_excerpt(), '17'); ?> [...]</p>         
             </div><!-- gridly-category -->
             </div><!-- item -->
             </a>
@@ -134,7 +134,7 @@ $(window).load(function() {
             <?php
             $args = array( 
               'numberposts' => 6, 
-              'category_name' => 'poiesis-core', 
+              'category_name' => 'théorie', 
               'orderby' => 'date', 
               'order' => 'DESC'
             );// CHECK FUNCTION.PHP LINE 104 FOR NUMBERPOSTS
@@ -150,7 +150,7 @@ $(window).load(function() {
             <h2><?php the_title(); ?></h2>
                             <?php } ?>
                         
-            <p class="small"><?php echo limit_words(get_the_excerpt(), '30'); ?> [...]</p>           
+            <p class="small"><?php echo limit_words(get_the_excerpt(), '17'); ?> [...]</p>           
             </div><!-- gridly-category -->
             </div><!-- item -->
             </a>
@@ -173,7 +173,7 @@ $(window).load(function() {
           </li><!-- blue -->
           <li data-type="green" class="is-hidden">
             <?php
-            $args = array( 'numberposts' => 6, 'category_name' => 'selection', 'orderby' => 'date', 'order' => 'DESC');
+            $args = array( 'numberposts' => 6, 'category_name' => 'pratique', 'orderby' => 'date', 'order' => 'DESC');
             $theposts = get_posts( $args );// CHECK FUNCTION.PHP LINE 104 FOR NUMBERPOSTS
             foreach($theposts as $post) :
             setup_postdata($post);
@@ -187,7 +187,7 @@ $(window).load(function() {
            
                             <?php } ?>
                         
-            <p class="small"><?php echo limit_words(get_the_excerpt(), '30'); ?> [...]</p>          
+            <p class="small"><?php echo limit_words(get_the_excerpt(), '17'); ?> [...]</p>          
             </div><!-- gridly-category -->
             </div><!-- item -->
             </a>
@@ -318,4 +318,5 @@ if(!Modernizr.svg) {
 <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/osmplayer/jquery-ui/dark-hive/jquery-ui.css">
 <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.2/jquery-ui.min.js"></script>
 </div>
+
 </body>

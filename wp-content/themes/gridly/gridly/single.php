@@ -32,7 +32,7 @@
   <h3>DERNIERS ARTICLES</h3>
   <?php
             $args = array( 
-              'numberposts' => 30, 
+              'numberposts' => 10, 
               'order' => 'DESC'
             );// CHECK FUNCTION.PHP LINE 104 FOR NUMBERPOSTS
             $theposts = get_posts( $args );
@@ -49,7 +49,7 @@
 <?php
             $args = array( 
               'numberposts' => 30, 
-              'category_name' => 'poiesis-core', 
+              'category_name' => 'théorie', 
               'orderby' => 'date', 
               'order' => 'DESC'
             );// CHECK FUNCTION.PHP LINE 104 FOR NUMBERPOSTS
@@ -68,7 +68,7 @@
 <?php
             $args = array( 
               'numberposts' => 30, 
-              'category_name' => 'poiesis-core', 
+              'category_name' => 'pratique', 
               'orderby' => 'date', 
               'order' => 'DESC'
             );// CHECK FUNCTION.PHP LINE 104 FOR NUMBERPOSTS
@@ -85,7 +85,7 @@
 <h3>AILLEURS SUR LE WEB</h3>
 <?php
             $args = array( 
-              'numberposts' => 30, 
+              'numberposts' => 10, 
               'category_name' => 'selection', 
               'orderby' => 'date', 
               'order' => 'DESC'
@@ -112,24 +112,8 @@
 
 <?php the_post_thumbnail( '' );  ?>
 </span>
-<div id="wrap-article">
- <div class="entry-content">
-  <h2 class="header"><?php the_title(); ?></h2>
-<div class="clear padding60"></div>
-<div class="clear padding60"></div>
-	<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
-   		<div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-	<p class="catekoi">
- 	<a href="http://www.biscaypla.in" onclick="track('Click-single-article-category','Click-single-article-category')">POESIS</a></p>		       			
-<div class="intro-excerp"><?php the_excerpt(); ?></div>
-  <p class="tags"><?php the_time(get_option('date_format')); ?> 
-</br><?php the_tags(); ?> </p>                        
-<div class="padding20"></div> 
-           		 <?php the_content(); 
-wpb_set_post_views(get_the_ID());
-?> 
 <ul id="share">
-<li class="whatsapp"><div class="whatsapp-btn"><?php echo do_shortcode('[whatsapp]'); ?></div></li>
+<h4>PARTAGER</h4>
 <li class="facebook">
 <div id="fb-root"></div>
 <script>(function(d, s, id) {
@@ -142,14 +126,28 @@ fjs.parentNode.insertBefore(js, fjs);
 <div class="fb-like" data-href="<?php the_permalink(); ?>" data-layout="button" data-action="like" data-show-faces="false" data-share="false"></div>
 </li>
 <li class="twitter">
-<a href="https://twitter.com/share" class="twitter-share-button" data-via="gamesnepal" data-related="gamesnepal" data-count="none">Tweet</a>
+<a href="https://twitter.com/share" class="twitter-share-button" data-via="hacedor" data-related="hacedor" data-count="none">Tweet</a>
 <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
 </li>
-<li class="gplus">
-<script src="https://apis.google.com/js/platform.js" async defer></script>
-<g:plus action="share"></g:plus>
-</li>
 </ul>
+<div id="wrap-article">
+ <div class="entry-content">
+  <h2 class="header"><?php the_title(); ?></h2>
+<div class="clear padding60"></div>
+<div class="clear padding60"></div>
+
+	<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
+   		<div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+	<p class="catekoi">
+ 	<a href="http://www.biscaypla.in" onclick="track('Click-single-article-category','Click-single-article-category')">POESIS</a></p>		       			
+<div class="intro-excerp"><?php the_excerpt(); ?></div>
+  <p class="tags"><?php the_time(get_option('date_format')); ?> 
+</br><?php the_tags(); ?> </p>                        
+<div class="padding20"></div> 
+           		 <?php the_content(); 
+wpb_set_post_views(get_the_ID());
+?> 
+
   <p class="tags" style="text-align:left;"><?php the_tags(); ?></p>
   <p class="tags" style="text-align:left;"><?php the_category(', '); ?></p>
 </div> 
