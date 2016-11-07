@@ -10,15 +10,15 @@
  endif;
  bloginfo('name'); 
 ?></title>
-<link rel="shortcut icon" href="http://www.biscaypla.in/favicon.ico">
+<link rel="shortcut icon" href="http://www.elhacedor.soy/favicon.ico">
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
 <meta name=viewport content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
 <meta property="og:locale" content="fr_FR" />
 <meta property="og:site_name" content="hacedor" />
 <meta property="og:type" content="website" />
 <meta property="og:title" content="hacedor : le jeu de la créativité." />
-<link rel="canonical" href="www.biscaypla.in" />
-<meta property="og:image" content="https://motif.imgix.com/i?url=http%3A%2F%2Fwww.biscaypla.in%2F&image_url=null&color=5b4e60&logo_url=https%3A%2F%2Flogo.clearbit.com%2Fwww.biscaypla.in%3Fformat%3Dpng%26size%3D300&logo_alignment=bottom%2Cright&text_alignment=top%2Cleft&logo_padding=0&font_family=Avenir%20Next%20Demi%2CBold&text_color=ffffff" />
+<link rel="canonical" href="www.elhacedor.soy" />
+<meta property="og:image" content="https://motif.imgix.com/i?url=http%3A%2F%2Fwww.elhacedor.soy%2F&image_url=null&color=5b4e60&logo_url=https%3A%2F%2Flogo.clearbit.com%2Fwww.elhacedor.soy%3Fformat%3Dpng%26size%3D300&logo_alignment=bottom%2Cright&text_alignment=top%2Cleft&logo_padding=0&font_family=Avenir%20Next%20Demi%2CBold&text_color=ffffff" />
 <meta property="og:description" content="hacedor est un site sur la créativité." />
 <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/style.css"/>
 <!-- <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/osmplayer/templates/default/css/osmplayer_default.css"> -->
@@ -60,7 +60,7 @@ window.addEventListener(
     },
     false);
 </script>
-<!-- Hotjar Tracking Code for www.biscaypla.in -->
+<!-- Hotjar Tracking Code for www.elhacedor.soy -->
 <script>
     (function(h,o,t,j,a,r){
         h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
@@ -79,7 +79,7 @@ window.addEventListener(
 
 “@type”: “WebSite”,
 
-“url”: “https://www.biscaypla.in/”,
+“url”: “https://www.elhacedor.soy/”,
 
 “potentialAction”: {
 

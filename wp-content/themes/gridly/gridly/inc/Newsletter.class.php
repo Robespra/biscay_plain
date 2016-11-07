@@ -42,6 +42,7 @@ class Newsletter
                     if ($q) {
                         $status  = "success";
                         $message = "Votre email a bien été enregistré, merci !";
+                        
                     } else {
                         $status  = "error";
                         $message = "Erreur, merci d'essayer une nouvelle fois.";
@@ -63,3 +64,4 @@ class Newsletter
         }
     }
 }
+

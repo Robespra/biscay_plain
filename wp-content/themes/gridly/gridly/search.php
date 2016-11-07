@@ -7,7 +7,7 @@
 <header>
 <div id="nav">
 <h1 class="hidden-h1">Biscay Plain, créativité Art et design</h1>
-<a href="http://www.biscaypla.in"><img class="logo" src="<?php echo get_template_directory_uri(); ?>/images/headerimage_1.svg" alt="Biscay Plain, création artistique et psychologie de l'Art"/></a>  
+<a href="http://www.elhacedor.soy"><img class="logo" src="<?php echo get_template_directory_uri(); ?>/images/headerimage_1.svg" alt="Biscay Plain, création artistique et psychologie de l'Art"/></a>  
 <!-- body has the class "cbp-spmenu-push" -->
 <nav class="cbp-spmenu cbp-spmenu-vertical cbp-spmenu-right" id="cbp-spmenu-s2">
 <div id="search"><?php get_search_form(); ?> </div>

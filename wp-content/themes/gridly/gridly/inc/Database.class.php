@@ -1,10 +1,10 @@
 <?php
 class Database
 {
-    private static $dbName = 'newsletter';
-    private static $dbHost = 'localhost';
-    private static $dbUsername = 'admin';
-    private static $dbUserPassword = 'admin01';
+    private static $dbName = 'elhacedopi980';
+    private static $dbHost = 'elhacedopi980.mysql.db';
+    private static $dbUsername = 'elhacedopi980';
+    private static $dbUserPassword = 'Lemysqhac64';
 
     private static $cont = null;
 

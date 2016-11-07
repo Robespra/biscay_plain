@@ -5,8 +5,8 @@
 <section>
 <header>
 <div class="logo_header">
-<h1 class="hidden-h1">hacedor, concentré d'articles sur le jeu de la créativité</h1>
-<a href="#" onclick="track('Click-logo-top','Click-logo-top')"><img class="logo-top"src="<?php bloginfo('template_url'); ?>/images/headerimage_1.svg" alt="Logo Poïesis"/></a>
+<h1 class="hidden-h1">el hacedor, le jeu de la créativité</h1>
+<a href="http://www.elhacedor.soy" onclick="track('Click-logo-top','Click-logo-top')"><img class="logo-top"src="<?php bloginfo('template_url'); ?>/images/headerimage_1.svg" alt="Logo Poïesis"/></a>
 <div class="cs-loader">
   <div class="cs-loader-inner">
     <label> ●</label>

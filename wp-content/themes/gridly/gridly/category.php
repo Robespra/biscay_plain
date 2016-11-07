@@ -15,23 +15,23 @@
 
 <div id="nav">
 <h1 class="hidden-h1">Biscay Plain, créativité Art et design</h1>
-<a href="http://www.biscaypla.in"><img class="logo" src="<?php echo get_template_directory_uri(); ?>/images/headerimage_1.svg" alt="Biscay Plain, création artistique et psychologie de l'Art"/></a>  
+<a href="http://www.elhacedor.soy"><img class="logo" src="<?php echo get_template_directory_uri(); ?>/images/headerimage_1.svg" alt="Biscay Plain, création artistique et psychologie de l'Art"/></a>  
 <!-- body has the class "cbp-spmenu-push" -->
 <nav class="cbp-spmenu cbp-spmenu-vertical cbp-spmenu-right" id="cbp-spmenu-s2">
   
 
-    <a class="first white" href="http://www.biscaypla.in">Accueil</a>
+    <a class="first white" href="http://www.elhacedor.soy">Accueil</a>
     <a class="ClickMe white">Langues  ►</a>
     <div class="box-langue"><a>Spanish</a><a>English</a></div>	
-    <a class="white" href="http://www.biscaypla.in/Poesis_pdf_ebook.pdf">Telecharger eBook (pdf)</a>
+    <a class="white" href="http://www.elhacedor.soy/Poesis_pdf_ebook.pdf">Telecharger eBook (pdf)</a>
     <a class="ClickMeApp white">Télécharger App  ►</a>
     
 <a class="ClickMeShare white">Partager  ►</a>
     <div class="share"><a>Facebook</a><a>Twitter</a><a>Google +</a><a>Pinterest</a></div>	
-    <a class="white" href="http://www.biscaypla.in/a-propos/">A propos</a>
+    <a class="white" href="http://www.elhacedor.soy/a-propos/">A propos</a>
     <a class="white" href="#">Guide de style</a>
     <a class="white" href="#">Partenariat</a>
-    <a class="white" href="http://www.biscaypla.in/contact-2/">Contact</a>
+    <a class="white" href="http://www.elhacedor.soy/contact-2/">Contact</a>
 
 </nav>
 

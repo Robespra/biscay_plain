@@ -5,7 +5,7 @@
 {
   "@context": "http://schema.org",
   "@type": "WebSite",
-  "url": "http://www.biscaypla.in/",
+  "url": "http://www.elhacedor.soy/",
   "potentialAction": {
     "@type": "SearchAction",
     "target": "https://query.example.com/search?q={search_term_string}",
@@ -43,8 +43,8 @@ $(window).load(function() {
 <div id="wrap">
 <!-- body has the class "cbp-spmenu-push" -->
 <div class="logo_header">
-<h1 class="hidden-h1">hacedor, concentré d'articles sur le jeu de la créativité</h1>
-<a href="http://www.biscaypla.in/" onclick="track('Click-logo-top','Click-logo-top')" rel="canonical"><img class="logo-top"src="<?php bloginfo('template_url'); ?>/images/headerimage_1.svg" alt="Logo Poïesis"/></a>
+<h1 class="hidden-h1">el hacedor, le jeu de la créativité</h1>
+<a href="http://www.elhacedor.soy/" onclick="track('Click-logo-top','Click-logo-top')" rel="canonical"><img class="logo-top"src="<?php bloginfo('template_url'); ?>/images/headerimage_1.svg" alt="Logo Poïesis"/></a>
 <div class="cs-loader">
   <div class="cs-loader-inner">
     <label> ●</label>
@@ -212,7 +212,7 @@ $(window).load(function() {
     </ul> <!-- cd-gallery -->
       <div class="big_headlines">
         <p class="category">LA PRATIQUE</p>
-        <a href="http://www.biscaypla.in/les-motivations-de-la-creativite/"onclick="track('Click-index-bigheadlines','Click-index-bigheadlines')" >
+        <a href="http://www.elhacedor.soy/les-motivations-de-la-creativite/"onclick="track('Click-index-bigheadlines','Click-index-bigheadlines')" >
           <h2 class="big_headlines_title">
             Les 14 lignes de Shakespeare, le bleu de Picasso, Lou Reed qui "tournait autour d'une phrase" : se fixer un cadre stimule la créativité.
           </h2>
@@ -248,7 +248,7 @@ $(window).load(function() {
 <div id="container-index-bottom">
 <div class="clear padding20"></div>
 <div class="citation_container">
-<a href="http://www.biscaypla.in/les-motivations-de-la-creativite/" onclick="track('Click-index-citation','Click-index-citation')">
+<a href="http://www.elhacedor.soy/les-motivations-de-la-creativite/" onclick="track('Click-index-citation','Click-index-citation')">
 <div class="citation">
 Il nous faut de toute manière révéler cette force, la manifester dans ses fonctions tout comme elle se manifeste en nous.
 <p>Paul Klee</p>

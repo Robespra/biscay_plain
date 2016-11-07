@@ -5,8 +5,8 @@
 <section>
 <header>
 <div class="logo_header">
-<h1 class="hidden-h1">hacedor, concentré d'articles sur le jeu de la créativité</h1>
-<a href="http://www.biscaypla.in" onclick="track('Click-logo-top','Click-logo-top')" rel="canonical"><img class="logo-top"src="<?php bloginfo('template_url'); ?>/images/headerimage_1.svg" alt="Logo Poïesis"/></a>
+<h1 class="hidden-h1">el hacedor, le jeu de la créativité</h1>
+<a href="http://www.elhacedor.soy" onclick="track('Click-logo-top','Click-logo-top')" rel="canonical"><img class="logo-top"src="<?php bloginfo('template_url'); ?>/images/headerimage_1.svg" alt="Logo Poïesis"/></a>
 <div class="cs-loader">
   <div class="cs-loader-inner">
     <label> ●</label>
@@ -139,7 +139,7 @@ fjs.parentNode.insertBefore(js, fjs);
 	<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
    		<div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<p class="catekoi">
- 	<a href="http://www.biscaypla.in" onclick="track('Click-single-article-category','Click-single-article-category')">POESIS</a></p>		       			
+ 	<a href="http://www.elhacedor.soy" onclick="track('Click-single-article-category','Click-single-article-category')">POESIS</a></p>		       			
 <div class="intro-excerp"><?php the_excerpt(); ?></div>
   <p class="tags"><?php the_time(get_option('date_format')); ?> 
 </br><?php the_tags(); ?> </p>                        
