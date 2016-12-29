@@ -55,7 +55,7 @@ $(window).load(function() {
 </div>
 <div class="double_container">
 <div class="double_left">
-<img class=" " src="<?php bloginfo('template_url'); ?>/images/hero_news.svg" alt="Biscay Newsletter illustration"/>
+<img class=" " src="<?php bloginfo('template_url'); ?>/images/hero_news.png" alt="el hacedor Newsletter illustration"/>
 </div><!-- illustr -->
 <div class="double_right">
 

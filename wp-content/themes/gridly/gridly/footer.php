@@ -51,14 +51,18 @@ if(!Modernizr.svg) {
 <script>
 //requires jQuery
 $(window).scroll(function(){
-  var threshold = 700; // number of pixels before bottom of page that you want to start fading
+  var threshold = 100; // number of pixels before bottom of page that you want to start fading
+  var offset = 200;
   var op = (($(document).height() - $(window).height()) - $(window).scrollTop()) / threshold;
   if( op <= 0 ){
     $("#share").hide();
+    $("#scui_dialog_avatar").hide();
   } else {
     $("#share").show();
+    $("#cui_dialog_avatar").show();
   }
   $("#share").css("opacity", op ); 
+  $("#cui_dialog_avatar").css("opacity", op ); 
 });
 </script>script>
 
