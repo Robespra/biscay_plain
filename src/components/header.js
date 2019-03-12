@@ -34,7 +34,7 @@ handleScroll = (event) => {
       <Helmet>
           <meta charSet="utf-8" />
           <title>uxpages.com</title>
-          <link rel="canonical" to="https://uxpages.com" />
+          <link rel="canonical" to="https://biscayplain.com" />
         </Helmet>
 
 
