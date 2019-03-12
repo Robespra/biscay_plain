@@ -4,10 +4,27 @@
   "version": "1.0.0",
   "author": "Kyle Mathews <mathews.kyle@gmail.com>",
   "dependencies": {
-    "gatsby": "^1.9.247",
-    "gatsby-link": "^1.6.40",
-    "gatsby-plugin-react-helmet": "^2.0.10",
-    "react-helmet": "^5.2.0"
+    "gatsby": "^2.1.18",
+    "gatsby-cli": "^2.4.11",
+    "gatsby-link": "^2.0.8",
+    "gatsby-plugin-babel": "^1.0.0",
+    "gatsby-plugin-favicon": "^3.1.5",
+    "gatsby-plugin-netlify": "^2.0.6",
+    "gatsby-plugin-postcss": "^2.0.2",
+    "gatsby-plugin-react-helmet": "^3.0.5",
+    "gatsby-plugin-sass": "^2.0.7",
+    "history": "^4.7.2",
+    "jquery": "^3.3.1",
+    "node-sass": "^4.11.0",
+    "postcss-browser-reporter": "^0.5.0",
+    "postcss-cssnext": "^3.1.0",
+    "postcss-import": "^12.0.1",
+    "postcss-reporter": "^6.0.1",
+    "react": "^16.7.0",
+    "react-dom": "^16.7.0",
+    "react-helmet": "^5.2.0",
+    "react-router-dom": "^4.3.1",
+    "react-router-scroll": "^0.4.4"
   },
   "keywords": [
     "gatsby"
@@ -17,10 +34,13 @@
     "build": "gatsby build",
     "develop": "gatsby develop",
     "format": "prettier --write 'src/**/*.js'",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "deploy": "gatsby build --prefix-paths && gh-pages -d public"
   },
   "devDependencies": {
-    "prettier": "^1.12.0"
+    "gh-pages": "^2.0.1",
+    "prettier": "^1.16.0",
+    "webpack": "^4.29.0"
   },
   "repository": {
     "type": "git",

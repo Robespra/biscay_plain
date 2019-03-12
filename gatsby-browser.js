@@ -5,3 +5,6 @@
  */
 
  // You can delete this file if you're not using it
+ import "./src/layouts/foundation.min.css"
+ import "./src/layouts/index.css"
+
