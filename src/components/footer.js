@@ -6,17 +6,9 @@ import form from './formData'
 
 
 const Footer = ({ siteTitle }) => (
-    <div className="footer_bg">
-
-
-<div className="bottom-navbar">
-		
-</div>
-
-
-
+    <div className="small-12 footer_bg align-center">
 <footer>
-    <div className="row large-unstack align-center">
+    <div className="row align-center">
 		<Link className="menu__item" to="/"><img src={require('../images/uxpages_logo.svg')} alt="test" /></Link>
 		<Link className="menu__item" to="#recent_work"><span className="menu__item-name">case studies</span></Link>
 		<Link className="menu__item" to="#skills"><span className="menu__item-name">capabilities</span></Link>

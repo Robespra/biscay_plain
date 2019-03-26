@@ -6,34 +6,12 @@ import { Helmet } from "react-helmet"
 
 
 
-class Header extends React.Component {
-  constructor(props) {
-    super(props)
-  
-    this.state = {
-      hasScrolled: false
-    }
-  }
-  componentDidMount() {
-    window.addEventListener('scroll', this.handleScroll)
-}
-handleScroll = (event) => {
-  const scrollTop = window.pageYOffset
+const Header = ({ siteTitle }) => (
 
-  if (scrollTop > 50) {
-    this.setState({ hasScrolled: true })
-  } else {
-    this.setState({ hasScrolled: false })
-  }
-}
-  render() {
-    return (
-      
-      <div className={this.state.hasScrolled ? 'Header HeaderScrolled' : 'Header'}>
-      
+
       <Helmet>
           <meta charSet="utf-8" />
-          <title>uxpages.com</title>
+          <title>biscay_plain</title>
           <link rel="canonical" to="https://biscayplain.com" />
         </Helmet>
 
@@ -43,13 +21,7 @@ handleScroll = (event) => {
 
 
 
-      </div>
-
-    )
-  }
-}
-
-
+)
 
 
 export default Header

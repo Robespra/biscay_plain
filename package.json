@@ -38,6 +38,7 @@
     "deploy": "gatsby build --prefix-paths && gh-pages -d public"
   },
   "devDependencies": {
+    "dropcss": "^0.3.0",
     "gh-pages": "^2.0.1",
     "prettier": "^1.16.0",
     "webpack": "^4.29.0"
