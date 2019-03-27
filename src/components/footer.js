@@ -5,25 +5,25 @@ import form from './formData'
 
 
 
-const Footer = ({ siteTitle }) => (
-    <div className="small-12 footer_bg align-center">
-<footer>
-    <div className="row align-center">
-		<Link className="menu__item" to="/"><img src={require('../images/uxpages_logo.svg')} alt="test" /></Link>
-		<Link className="menu__item" to="#recent_work"><span className="menu__item-name">case studies</span></Link>
-		<Link className="menu__item" to="#skills"><span className="menu__item-name">capabilities</span></Link>
-		<Link className="menu__item" to="#side_project"><span className="menu__item-name">side project</span></Link>
-		<Link className="menu__item" to="#contactForm"><span className="menu__item-name">contact</span></Link>
-      <div className="column">
-        <small>&copy; 2019 uxpages eirl</small>
-      </div>
-    </div>
-</footer>
+const Footer = () => (
+	<footer>
+			<div className="expanded row align-left">
+				<div className="columns small-3">
+				<small><Link className="menu__item" to="#recent_work"><span className="menu__item-name">Get in touch</span></Link></small>
+				</div>
+				<div className="columns small-3">
+				<small><Link className="menu__item" to="#skills"><span className="menu__item-name">Suggest your article</span></Link></small>
+				</div>
+				<div className="columns small-3">
+				<small><Link className="menu__item" to="#side_project"><span className="menu__item-name">Privacy policy</span></Link></small>
+				</div>
+				<div className="columns small-3">
+					<small>&copy; BiscayPlain 2011-2019</small>
+				</div>
+			</div>
+	</footer>
 
-      
-    </div>
     
     )
     
-    
-    export default Footer
+export default Footer
