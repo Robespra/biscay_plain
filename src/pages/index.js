@@ -15,7 +15,7 @@ const IndexPage = () => (
 
     <div className="small-12 medium-8 columns">
         <div className="row full-left-pannel">
-            
+        <img className="logo_bp" src={require('../images/biscay_plain_logo.svg')} alt="biscay plain logo"/>
             <div className="small-12 columns align-self-middle">
                 <h2>Selected content for people interested in creativity</h2>
                 <h5>Get 5 free articles and guides in your inbox every Friday</h5>
@@ -43,6 +43,9 @@ const IndexPage = () => (
     
     
     <div className="small-12 medium-4 columns align-self-middle">
+    {/* <div className="circ">
+            <img src={require('../images/animated_topography.svg')} alt="test" />
+        </div> */}
         <small>LATEST WEEKLY ISSUE</small>
         <div className="skills_underline_orange"></div>
         <div className="callout_publications">
@@ -63,11 +66,11 @@ const IndexPage = () => (
                     <p>This phenomenon is the basis of human links and artistic communication.</p>
         </div>
         
+        
     </div>
     
  </div>
- 
-
+    
 </div>
 
 ) 
