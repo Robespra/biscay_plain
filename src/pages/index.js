@@ -20,17 +20,18 @@ const IndexPage = () => (
                 <h2>Weekly picks for people interested in creativity</h2>
                 <h5>Get 5 free articles and guides in your inbox every Friday<a>        See sample <span className="target_blank"></span></a></h5>
                     <form name="contactForm" id="contactForm" method="post" className=" row topBefore padding5_top">
-                        <div className="small-8 columns">
+                        <div className="small-12 medium-8 columns">
                             <input id="email" type="email" name="Email" placeholder="Leave your e-mail..." required/>
-                            <small>No spam, no fuss. Unsubscribe anytime.</small>
                         </div>
-                        <div className="small-4 columns">
+                        <div className="small-12 medium-4 columns">
                             <input id='send-button' className="submitBtn" type="submit" value="Subscribe"/>
                         </div>
-                        
+                        <div className="small-12 columns no-spam">
+                            <small>No spam, no fuss. Unsubscribe anytime.</small>
+                        </div>
                     </form>
             </div>
-            <div className="columns small-12 align-self-bottom">
+            <div className="footer-medium columns small-12 align-self-bottom">
                 <div className="row">
                     <div className="small-12 columns align-self-bottom">
                         <Footer/>
@@ -42,7 +43,7 @@ const IndexPage = () => (
     </div>
     
     
-    <div className="small-12 medium-4 columns align-self-middle">
+    <div className="small-12 medium-4 columns align-self-middle publications">
     {/* <div className="circ">
             <img src={require('../images/animated_topography.svg')} alt="test" />
         </div> */}
@@ -68,9 +69,29 @@ const IndexPage = () => (
         
         
     </div>
-    
+    <div className="footer-mobile columns small-12 align-self-bottom">
+        <div className="row">
+            <div className="small-12 columns align-self-bottom">
+            <div className="expanded row align-left">
+				<div className="columns small-6">
+				<small><Link className="menu__item" to="#recent_work"><span className="menu__item-name">Get in touch</span></Link></small>
+				</div>
+				<div className="columns small-6">
+				<small><Link className="menu__item" to="#skills"><span className="menu__item-name">Suggest your article</span></Link></small>
+				</div>
+				<div className="columns small-6">
+				<small><Link className="menu__item" to="#side_project"><span className="menu__item-name">Privacy policy</span></Link></small>
+				</div>
+				<div className="columns small-6">
+					<small>&copy; BiscayPlain 2011-2019</small>
+				</div>
+			</div>
+            </div>
+        </div>
+    </div>
  </div>
     
+
 </div>
 
 ) 

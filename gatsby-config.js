@@ -9,6 +9,7 @@ module.exports = {
     // Shortcut for adding plugins without options.
     `gatsby-plugin-postcss`,
     'gatsby-plugin-react-helmet',
+    'gatsby-plugin-optimize-svgs',
     {
     // Standard plugin with options example
     resolve: 'gatsby-plugin-babel',
