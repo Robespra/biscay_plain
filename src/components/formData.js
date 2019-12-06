@@ -59,7 +59,7 @@ window.onload=function(){
     const formData = new FormData(this);
 
     postToFormspree(formData).then(response => {
-        sendButton.value = 'Message sent, thank you!';
+        sendButton.value = 'email registered, thank you!';
         this.reset();
 
     });

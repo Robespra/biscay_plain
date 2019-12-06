@@ -18,7 +18,7 @@ const IndexPage = () => (
         <img className="logo_bp" src={require('../images/biscay_plain_logo.svg')} alt="biscay plain logo"/>
             <div className="small-12 columns">
                 <h2>Weekly picks for people interested in creativity</h2>
-                <h5>Get 5 free articles and guides in your inbox every Friday<a>        See sample <span className="target_blank"></span></a></h5>
+                <h5>Get 5 free articles and guides in your inbox every Saturday morning<a>        See sample <span className="target_blank"></span></a></h5>
                     <form name="contactForm" id="contactForm" method="post" className=" row topBefore padding5_top">
                         <div className="small-12 medium-8 columns">
                             <input id="email" type="email" name="Email" placeholder="Leave your e-mail..." required/>
