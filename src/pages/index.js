@@ -18,12 +18,12 @@ const IndexPage = () => (
         <img className="logo_bp" src={require('../images/biscay_plain_logo.svg')} alt="biscay plain logo"/>
             <div className="small-12 columns">
                 <h2>Weekly picks for people interested in creativity</h2>
-                <h5>Get 5 free articles and guides in your inbox every Saturday morning<a>        See sample <span className="target_blank"></span></a></h5>
+                <h5>Get 5 free articles and guides in your inbox every Saturday morning</h5>
                     <form name="contactForm" id="contactForm" method="post" className=" row topBefore padding5_top">
-                        <div className="small-12 medium-8 columns">
+                        <div className="small-12 medium-4 columns underlined_submit">
                             <input id="email" type="email" name="Email" placeholder="Leave your e-mail..." required/>
                         </div>
-                        <div className="small-12 medium-4 columns">
+                        <div className="small-12 medium-4 columns underlined_submit">
                             <input id='send-button' className="submitBtn" type="submit" value="Subscribe"/>
                         </div>
                         <div className="small-12 columns no-spam">
@@ -83,7 +83,7 @@ const IndexPage = () => (
 				<small><Link className="menu__item" to="#side_project"><span className="menu__item-name">Privacy policy</span></Link></small>
 				</div>
 				<div className="columns small-6">
-					<small>&copy; BiscayPlain 2011-2019</small>
+					<small>&copy; BiscayPlain 2011-2020</small>
 				</div>
 			</div>
             </div>

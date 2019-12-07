@@ -156,22 +156,29 @@ h2 {font-size:4em; margin-bottom:0.2em}
 #contactForm input[type="text"], #contactForm input[type="email"], #contactForm input[type="tel"], #contactForm input[type="url"], #contactForm textarea {
   width:100%;
   border: none;
-  background:#FFF;
-  padding: 0.8em;
+  background:transparent !important;
+  padding: 0;
   line-height: 2em;
   margin:1em 0;
 }
+
+#contactForm input[type="email"]:selected {
+  background:transparent !important;
+}
 .no-spam {
   text-align:center;
+  color:#888;
+  padding:0;
 }
 .publications {
   margin-top:20%;
 }
 @media screen and (min-width:38.9375em){
   #contactForm input[type="text"], #contactForm input[type="email"], #contactForm input[type="tel"], #contactForm input[type="url"], #contactForm textarea {
-  padding: 0.8em;
+  padding: 0.8em 0;
   line-height: 2.3em;
   margin:0;
+
   }
   .no-spam {
     text-align:left;
@@ -201,21 +208,18 @@ h2 {font-size:4em; margin-bottom:0.2em}
   white-space: normal;
   cursor:pointer;
   width:100%;
-  box-shadow: 0 15px 22px rgba(0,0,0,.1);
-    transition: all .2s cubic-bezier(.03,1.12,.64,.99);
-    font-size: 1rem;
-    padding: 1.4em 1em;
-    border-radius: 45px;
-    display: inline-block;
-    vertical-align: middle;
-    -webkit-appearance: none;
-    border: 1px solid transparent;
-    line-height: 1;
-    text-align: center;
-    cursor: pointer;
-    background-color: #cb5f48;
-    color: white;
-
+  font-size: 1rem;
+  padding: 1.4em 1em;
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-appearance: none;
+  border: 1px solid transparent;
+  line-height: 1;
+  text-align: right;
+  cursor: pointer;
+  background-color:transparent;
+  transition:all 0.3s ease-in-out;
+  color:#fda085;
 }
 
 .label-form {
@@ -223,8 +227,7 @@ h2 {font-size:4em; margin-bottom:0.2em}
 }
 
 #contactForm input[type="submit"]:hover, input[type="submit"]:active, input[type="submit"]:focus {
-  transform: translateY(-1px);
-    box-shadow: 0 7px 14px rgba(50,50,93,.1), 0 3px 6px rgba(0,0,0,.08);
+  color:#888;
 }
 
 #contactForm input:focus, #contactForm textarea:focus {
@@ -261,14 +264,14 @@ input:-webkit-autofill {
   position: relative;
   width: 200px;
   height: 80px;
-  margin: 5% auto;
+  margin: 1% auto;
 }
 @media screen and (min-width:38.9375em){
   .logo_bp {
     position: relative;
     width: 200px;
     height: 80px;
-    margin: 5% 0 0 0;
+    margin: 1% 0 0 0;
   }
 }
 
@@ -287,4 +290,12 @@ input:-webkit-autofill {
   .footer-medium{
     display:none;
   }
+  #contactForm input[type="submit"], #contactForm input[type="email"]{
+    text-align:center;
+  }
+}
+.underlined_submit {
+  border-bottom: 3px solid #fda085;
+  margin: 0;
+  padding: 0;
 }
