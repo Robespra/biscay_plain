@@ -12,7 +12,7 @@ export default () => (
 
     <div className="small-12 medium-8 columns">
         <div className="row full-left-pannel">
-        <Link to="/"><img className="logo_bp" src={require('../images/biscay_plain_logo.svg')} alt="biscay plain logo"/></Link>
+        <Link className="menu__item" to="/"><img className="logo_bp" src={require('../images/biscay_plain_logo.svg')} alt="biscay plain logo"/></Link>
             <div className="small-12 columns">
                 <h2>Weekly picks for people interested in creativity</h2>
                 <h5>Get 5 free articles and guides in your inbox every Saturday morning</h5>
@@ -60,7 +60,7 @@ export default () => (
             <p>Dr. Newberg’s main area of study was enlightenment: he’d been putting Buddhist monks and other spiritual leaders into the machine to see whether their moments of transcendence had a physiological basis. But right now, he was looking for patterns in the brains of creative people.</p>
         </div>
         <div className="callout_publications">
-        <Link className="menu__item" to="/books/" onclick="track('Click-see-article-empathy','Click-see-article-empathy')"><h3>Weekly book selection<span className="target_blank"></span></h3></Link>
+            <a href="http://www.biscaypla.in/blog/weeklybookselection" target="_blank" rel="noopener" onclick="track('Click-see-article-empathy','Click-see-article-empathy')"><h3>Weekly book selection<span className="target_blank"></span></h3></a>
                     <p>Our weekly creative reading recommendation.</p>
         </div>
         
@@ -71,13 +71,13 @@ export default () => (
             <div className="small-12 columns align-self-bottom">
             <div className="expanded row align-left">
 				<div className="columns small-6">
-				<small><Link className="menu__item" to="/contact/"><span className="menu__item-name">Get in touch</span></Link></small>
+				<small><Link className="menu__item" to="#recent_work"><span className="menu__item-name">Get in touch</span></Link></small>
 				</div>
 				<div className="columns small-6">
-				<small><Link className="menu__item" to="/submissions/"><span className="menu__item-name">Suggest your article</span></Link></small>
+				<small><Link className="menu__item" to="#skills"><span className="menu__item-name">Suggest your article</span></Link></small>
 				</div>
 				<div className="columns small-6">
-				<small><Link className="menu__item" to="/legal/"><span className="menu__item-name">Privacy policy</span></Link></small>
+				<small><Link className="menu__item" to="#side_project"><span className="menu__item-name">Privacy policy</span></Link></small>
 				</div>
 				<div className="columns small-6">
 					<small>&copy; BiscayPlain 2011-2020</small>

@@ -27,8 +27,8 @@ function validate(name, email, honeypot) {
   return errors;
 }
 window.onload=function(){
-  const sendButton = document.getElementById('send-button')
-
+  const sendButton = document.getElementById('send-button');
+  const emailPlaceholder = document.getElementById('email');
   const formDataToJson = formData => {
     const entries = formData.entries();
 
@@ -60,6 +60,7 @@ window.onload=function(){
 
     postToFormspree(formData).then(response => {
         sendButton.value = 'Thank you!';
+        emailPlaceholder.placeholder = 'Your email is now registered.';
         this.reset();
 
     });
