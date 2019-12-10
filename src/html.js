@@ -27,7 +27,7 @@ export default class HTML extends React.Component {
             dangerouslySetInnerHTML={{ __html: this.props.body }}
           />
           {this.props.postBodyComponents}
-          <script async src="https://www.googletagmanager.com/gtag/js?id=UA-38305116-1"></script>
+          <script async src="https://www.googletagmanager.com/gtag/js?id=UA-31626671-1"></script>
           <script
             dangerouslySetInnerHTML={{
               __html: `
@@ -35,7 +35,7 @@ export default class HTML extends React.Component {
                 function gtag(){dataLayer.push(arguments);}
                 gtag('js', new Date());
               
-                gtag('config', 'UA-38305116-1');
+                gtag('config', 'UA-31626671-1');
                   `,
             }}
           />
