@@ -315,7 +315,7 @@ input:-webkit-autofill {
   align-items: center;
 }
 .phone {
-  width: 360px;
+  width: 355px;
   height: 660px;
   border: 3px solid $white;
   border-radius: 40px;
