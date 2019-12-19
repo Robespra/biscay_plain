@@ -39,6 +39,9 @@ export default class HTML extends React.Component {
                   `,
             }}
           />
+          <script>var clicky_site_ids = clicky_site_ids || []; clicky_site_ids.push(101226440);</script>
+          <script async src="//static.getclicky.com/js"></script>
+
         </body>
       </html>
     )

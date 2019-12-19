@@ -2,6 +2,7 @@ import React from 'react'
 import { Link } from "gatsby"
 import Header from '../components/header'
 import Footer from '../components/footer'
+import form from '../components/formData'
 let pathPrefix = `/`
 export default () => (
 <div className="body_full">
@@ -15,7 +16,7 @@ export default () => (
         <Link to="/"><img className="logo_bp" src={require('../images/biscay_plain_logo.svg')} alt="biscay plain logo"/></Link>
             <div className="small-12 columns">
                 <h2>Weekly picks for people interested in creativity</h2>
-                <h5>Get 5 free articles and guides in your inbox every Saturday morning</h5>
+                <h5>Get 5 free articles and guides in your inbox every Saturday morning ☕</h5>
                     <form name="contactForm" id="contactForm" method="post" className=" row topBefore padding5_top">
                         <div className="small-12 medium-4 columns underlined_submit">
                             <input id="email" type="email" name="Email" placeholder="Leave your e-mail..." required/>
@@ -44,7 +45,14 @@ export default () => (
     {/* <div className="circ">
             <img src={require('../images/animated_topography.svg')} alt="test" />
         </div> */}
-        <small>LATEST WEEKLY ISSUE</small>
+        <div class="phone">
+		<div class="notch"></div>
+		<div class="censor"></div>
+		<div class="camera"></div>
+		<div class="speaker"></div>
+		<div class="screen">
+			<div class="inner">
+            <small>LATEST WEEKLY ISSUE</small>
         <div className="skills_underline_orange"></div>
         <div className="callout_publications">
             <a href="http://digest.bps.org.uk/2006/03/be-creative-dont-even-think-about-it.html" target="_blank" rel="noopener" onclick="track('Click-see-article-solitude','Click-see-article-solitude')"><h3>Be creative: Don't even think about it<span className="target_blank"></span></h3></a>
@@ -63,6 +71,10 @@ export default () => (
         <Link className="menu__item" to="/books/" onclick="track('Click-see-article-empathy','Click-see-article-empathy')"><h3>Weekly book selection<span className="target_blank"></span></h3></Link>
                     <p>Our weekly creative reading recommendation.</p>
         </div>
+			</div>
+		</div>
+	</div>
+        
         
         
     </div>

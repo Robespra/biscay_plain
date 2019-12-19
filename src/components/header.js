@@ -23,7 +23,7 @@ export default () => (
           <meta property="og:description" content="Weekly picks email newsletter for people interested in creativity. Get 5 free articles and guides in your inbox every Saturday morning"/>
           <meta property="og:site_name" content="biscaypla.in"/>
           <meta property="og:image" content="https://biscaypla.in/logo-social.png"/>
-          <link rel="canonical" href="www.biscayplain.com" />
+          <link rel="canonical" href="www.biscaypla.in" />
           <meta http-equiv="cleartype" content="on"></meta>
           <link rel="canonical" to="https://biscaypla.in" />
           <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"/>

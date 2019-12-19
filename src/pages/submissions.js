@@ -27,6 +27,21 @@ export default () => (
                             <small>No spam, no fuss. Unsubscribe anytime.</small>
                         </div>
                     </form>
+                    Sponsorship inquiry
+Would you like to introduce your product or service to the HeyDesigner community? Please fill the form below and we'll contact you shortly.
+
+Name of your product / service
+FIELD
+URL of the product / service
+FIELD
+A short description of the product / service
+FIELD
+Full name
+FIELD
+Email address
+FIELD
+submitBTN
+
             </div>
             <div className="footer-medium columns small-12 align-self-bottom">
                 <div className="row">

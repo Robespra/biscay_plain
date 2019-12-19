@@ -16,7 +16,7 @@ export default () => (
             <div className="small-12 columns">
                 <h2>Weekly picks for people interested in creativity</h2>
                 <h5>Get 5 free articles and guides in your inbox every Saturday morning</h5>
-                    <form name="contactForm" id="contactForm" method="post" className=" row topBefore padding5_top">
+                <form name="contactForm" id="contactForm" method="post" className=" row topBefore padding5_top">
                         <div className="small-12 medium-4 columns underlined_submit">
                             <input id="email" type="email" name="Email" placeholder="Leave your e-mail..." required/>
                         </div>

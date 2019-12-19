@@ -1,7 +1,5 @@
 import React from 'react';
 import { Link } from 'gatsby';
-import Header from '../components/header';
-import form from './formData';
 export default () => (
 	<footer>
 			<div className="expanded row align-left">
