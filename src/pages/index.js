@@ -15,8 +15,8 @@ export default () => (
         <div className="row full-left-pannel">
         <Link to="/"><img className="logo_bp" src={require('../images/biscay_plain_logo.svg')} alt="biscay plain logo"/></Link>
             <div className="small-12 columns">
-                <h2>Weekly picks for people interested in creativity</h2>
-                <h5>Get 5 free articles and guides in your inbox every Saturday morning ☕</h5>
+                <h2>Monthly picks for people interested in creativity</h2>
+                <h5>Get 5 free articles and guides in your inbox every last Sunday morning of the month ☕</h5>
                     <form name="contactForm" id="contactForm" method="post" className=" row topBefore padding5_top">
                         <div className="small-12 medium-4 columns underlined_submit">
                             <input id="email" type="email" name="Email" placeholder="Leave your e-mail..." required/>
@@ -45,31 +45,34 @@ export default () => (
     {/* <div className="circ">
             <img src={require('../images/animated_topography.svg')} alt="test" />
         </div> */}
-        <div class="phone">
-		<div class="notch"></div>
-		<div class="censor"></div>
-		<div class="camera"></div>
-		<div class="speaker"></div>
-		<div class="screen">
-			<div class="inner">
-            <small>LATEST WEEKLY ISSUE</small>
+        <div className="phone">
+		<div className="notch"></div>
+		<div className="censor"></div>
+		<div className="camera"></div>
+		<div className="speaker"></div>
+		<div className="screen">
+			<div className="inner">
+            <span className="">FLECHE</span>
+        <span className="">wifi</span>
+        <img className="logo_bp" src={require('../images/biscay_plain_logo.svg')} alt="biscay plain logo"/>
+            <small>LATEST MONTHLY ISSUE</small>
         <div className="skills_underline_orange"></div>
         <div className="callout_publications">
-            <a href="http://digest.bps.org.uk/2006/03/be-creative-dont-even-think-about-it.html" target="_blank" rel="noopener" onclick="track('Click-see-article-solitude','Click-see-article-solitude')"><h3>Be creative: Don't even think about it<span className="target_blank"></span></h3></a>
+            <a href="http://digest.bps.org.uk/2006/03/be-creative-dont-even-think-about-it.html" target="_blank" rel="noopener" onclick="track('Click-see-article-solitude','Click-see-article-solitude')"><h3>Be creative: Don't even think about it</h3></a>
             <p>Not thinking about a problem for a while doesn’t just give you a fresh perspective, it also allows your more creative unconscious to get to work as it.</p>
         </div>
 
         <div className="callout_publications">
-            <a href="https://medium.com/@neilstevenson77/inside-the-brain-machine-neuroscience-changed-how-i-think-about-creativity-86f49503bbc8#.w9hy85syc" target="_blank" rel="noopener" onclick="track('Click-see-article-five','Click-see-article-five')"><h3>What Makes a Genius? <span className="target_blank"></span></h3></a>
+            <a href="https://medium.com/@neilstevenson77/inside-the-brain-machine-neuroscience-changed-how-i-think-about-creativity-86f49503bbc8#.w9hy85syc" target="_blank" rel="noopener" onclick="track('Click-see-article-five','Click-see-article-five')"><h3>What Makes a Genius?</h3></a>
             <p>Inside the brain machine : neuroscience changed how I think about creativity</p>
         </div>
         <div className="callout_publications">
-            <a href="http://blogs.scientificamerican.com/beautiful-minds/the-real-neuroscience-of-creativity/" target="_blank" rel="noopener" onclick="track('Click-see-article-five','Click-see-article-five')"><h3>The real neuroscience of creativity<span className="target_blank"></span></h3></a>
+            <a href="http://blogs.scientificamerican.com/beautiful-minds/the-real-neuroscience-of-creativity/" target="_blank" rel="noopener" onclick="track('Click-see-article-five','Click-see-article-five')"><h3>The real neuroscience of creativity</h3></a>
             <p>Dr. Newberg’s main area of study was enlightenment: he’d been putting Buddhist monks and other spiritual leaders into the machine to see whether their moments of transcendence had a physiological basis. But right now, he was looking for patterns in the brains of creative people.</p>
         </div>
         <div className="callout_publications">
-        <Link className="menu__item" to="/books/" onclick="track('Click-see-article-empathy','Click-see-article-empathy')"><h3>Weekly book selection<span className="target_blank"></span></h3></Link>
-                    <p>Our weekly creative reading recommendation.</p>
+        <Link className="menu__item" to="/books/" onclick="track('Click-see-article-empathy','Click-see-article-empathy')"><h3>Monthly book selection</h3></Link>
+                    <p>Our monthly creative reading recommendation.</p>
         </div>
 			</div>
 		</div>
