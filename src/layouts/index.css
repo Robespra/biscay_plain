@@ -1,5 +1,6 @@
 
 @import url('https://fonts.googleapis.com/css?family=Lora|Open+Sans');
+@import url('https://css.gg/c?=|adidas|backspace|battery|chevron-left|data|heart|inbox|mail-open|more-vertical-alt');
 body{background-color:#f9f4f1;color:#163f3d;font-family:'Open Sans',sans-serif}.hidden-h1{text-indent:100%;white-space:nowrap;overflow:hidden;position:absolute;z-index:-1;color:transparent;font-size:1px;left:-100vh}.hero_container,.sidebar-nav{position:relative}
 h1,h2,h3,h4,h5{font-family:Lora,serif}
 @media screen and (max-width:38.9375em){
@@ -391,4 +392,12 @@ input:-webkit-autofill {
   padding-bottom: 50px;
   overflow-y: scroll;
   overflow-x: hidden;
+}
+
+:root {
+  --ggs: 2;
+}
+
+.gg-adidas {
+  --ggs: 2;
 }

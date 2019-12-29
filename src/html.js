@@ -41,7 +41,7 @@ export default class HTML extends React.Component {
           />
           <script>var clicky_site_ids = clicky_site_ids || []; clicky_site_ids.push(101226440);</script>
           <script async src="//static.getclicky.com/js"></script>
-
+          <link href="https://css.gg/c?=|adidas|backspace|battery|chevron-left|data|heart|inbox|mail-open|more-vertical-alt" rel="stylesheet"/>
         </body>
       </html>
     )

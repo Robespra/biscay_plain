@@ -4,6 +4,7 @@
   "version": "1.0.0",
   "author": "Kyle Mathews <mathews.kyle@gmail.com>",
   "dependencies": {
+    "css.gg": "^1.0.4",
     "gatsby": "^2.18.10",
     "gatsby-cli": "^2.8.18",
     "gatsby-link": "^2.2.27",

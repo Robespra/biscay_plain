@@ -25,7 +25,7 @@ export default () => (
                             <input id='send-button' className="submitBtn" type="submit" value="Subscribe"/>
                         </div>
                         <div className="small-12 columns no-spam">
-                            <small>No spam, no fuss. Unsubscribe anytime.</small>
+                            <small>No spam, no fuss. Unsubscribe anytime. <Link className="menu__item" to="/legal/">Privacy policy</Link></small>
                         </div>
                     </form>
             </div>
@@ -52,8 +52,10 @@ export default () => (
 		<div className="speaker"></div>
 		<div className="screen">
 			<div className="inner">
-            <span className="">FLECHE</span>
-        <span className="">wifi</span>
+            <i class="gg-chevron-left"></i>09:45
+            <i class="gg-adidas"></i>
+            <i class="gg-battery"></i>
+            
         <img className="logo_bp" src={require('../images/biscay_plain_logo.svg')} alt="biscay plain logo"/>
             <small>LATEST MONTHLY ISSUE</small>
         <div className="skills_underline_orange"></div>
@@ -85,13 +87,19 @@ export default () => (
         <div className="row">
             <div className="small-12 columns align-self-bottom">
             <div className="expanded row align-left">
-				<div className="columns small-6">
+                <div className="columns small-2">
+				<small><Link className="menu__item" to="/contact/"><span className="menu__item-name">Unsubscribe</span></Link></small>
+				</div>
+                <div className="columns small-2">
+				<small><Link className="menu__item" to="/contact/"><span className="menu__item-name">Change email address</span></Link></small>
+				</div>
+				<div className="columns small-2">
 				<small><Link className="menu__item" to="/contact/"><span className="menu__item-name">Get in touch</span></Link></small>
 				</div>
-				<div className="columns small-6">
+				<div className="columns small-2">
 				<small><Link className="menu__item" to="/submissions/"><span className="menu__item-name">Suggest your article</span></Link></small>
 				</div>
-				<div className="columns small-6">
+				<div className="columns small-2">
 				<small><Link className="menu__item" to="/legal/"><span className="menu__item-name">Privacy policy</span></Link></small>
 				</div>
 				<div className="columns small-6">
