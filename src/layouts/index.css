@@ -158,7 +158,6 @@ h2 {font-size:4em; margin-bottom:0.2em}
 #contactForm input[type="text"], #contactForm input[type="email"], #contactForm input[type="tel"], #contactForm input[type="url"], #contactForm textarea {
   width:100%;
   border: none;
-  background:transparent !important;
   padding: 0;
   line-height: 2em;
   margin:1em 0;
@@ -177,9 +176,13 @@ h2 {font-size:4em; margin-bottom:0.2em}
 }
 @media screen and (min-width:38.9375em){
   #contactForm input[type="text"], #contactForm input[type="email"], #contactForm input[type="tel"], #contactForm input[type="url"], #contactForm textarea {
-  padding: 0.8em 0;
+  background:#f9f4f1;
+  padding: 0.8em;
+    border-top-left-radius:30px;
+    border-bottom-left-radius:30px;
   line-height: 2.3em;
   margin:0;
+  font-weight: bold;
 
   }
   .no-spam {
@@ -217,11 +220,12 @@ h2 {font-size:4em; margin-bottom:0.2em}
   -webkit-appearance: none;
   border: 1px solid transparent;
   line-height: 1;
-  text-align: right;
+  text-align: center;
   cursor: pointer;
   background-color:transparent;
   transition:all 0.3s ease-in-out;
-  color:#fda085;
+  color:#fff;
+  font-weight:bold;
 }
 
 .label-form {
@@ -229,7 +233,7 @@ h2 {font-size:4em; margin-bottom:0.2em}
 }
 
 #contactForm input[type="submit"]:hover, input[type="submit"]:active, input[type="submit"]:focus {
-  color:#888;
+  color:#F1F1F1;
 }
 
 #contactForm input:focus, #contactForm textarea:focus {
@@ -237,16 +241,16 @@ h2 {font-size:4em; margin-bottom:0.2em}
   border: none;
 }
 ::-webkit-input-placeholder {
- color:#888;
+ color:#fda085;
 }
 :-moz-placeholder {
- color:#888;
+ color:#fda085;
 }
 ::-moz-placeholder {
- color:#888;
+ color:#fda085;
 }
 :-ms-input-placeholder {
- color:#888;
+ color:#fda085;
 }
 input:-webkit-autofill {
     -webkit-box-shadow: 0 0 0 30px white inset;
@@ -296,8 +300,20 @@ input:-webkit-autofill {
     text-align:center;
   }
 }
-.underlined_submit {
-  border-bottom: 3px solid #fda085;
+.textfield_submit {
+  border: 2px solid #fda085;
+  margin: 0;
+  padding: 0;
+  border-right:none;
+  border-top-left-radius:30px;
+  border-bottom-left-radius:30px;
+}
+.btn_submit {
+  border: 2px solid #fda085;
+  background-color:#fda085;
+  color:#fff;
+  border-top-right-radius:30px;
+  border-bottom-right-radius:30px;
   margin: 0;
   padding: 0;
 }

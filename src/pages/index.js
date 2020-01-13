@@ -18,10 +18,10 @@ export default () => (
                 <h2>Monthly picks for people interested in creativity</h2>
                 <h5>Get 5 free articles and guides in your inbox every last Sunday morning of the month ☕</h5>
                     <form name="contactForm" id="contactForm" method="post" className=" row topBefore padding5_top">
-                        <div className="small-12 medium-4 columns underlined_submit">
+                        <div className="small-12 medium-4 columns textfield_submit">
                             <input id="email" type="email" name="Email" placeholder="Leave your e-mail..." required/>
                         </div>
-                        <div className="small-12 medium-4 columns underlined_submit">
+                        <div className="small-12 medium-2 columns btn_submit">
                             <input id='send-button' className="submitBtn" type="submit" value="Subscribe"/>
                         </div>
                         <div className="small-12 columns no-spam">
