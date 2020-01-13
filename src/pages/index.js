@@ -56,6 +56,7 @@ export default () => (
             <i class="gg-adidas"></i>
             <i class="gg-battery"></i>
             
+        <img className="logo_bp" src={require('../images/biscay_plain_logo_waves.svg')} alt="biscay plain logo waves"/>
         <img className="logo_bp" src={require('../images/biscay_plain_logo.svg')} alt="biscay plain logo"/>
             <small>LATEST MONTHLY ISSUE</small>
         <div className="skills_underline_orange"></div>
