@@ -49,9 +49,9 @@ export default () => (
         
 		<div className="screen">
         <div className="email_bar">
-            <i class="gg-chevron-left"></i>09:45
-            <i class="gg-adidas"></i>
-            <i class="gg-battery"></i>
+            <i class="ico_chevron-left"></i>09:45
+            <i class="ico_network"></i>
+            <i class="ico_battery"></i>
             <div className="notch"></div>
             <div className="censor"></div>
             <div className="camera"></div>
