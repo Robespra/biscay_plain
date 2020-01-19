@@ -54,13 +54,15 @@ window.onload=function(){
 
     e.preventDefault();
 
-    sendButton.value = 'Sending..';
+    sendButton.value = 'Sending...';
 
     const formData = new FormData(this);
 
     postToFormspree(formData).then(response => {
         sendButton.value = 'Thank you!';
         emailPlaceholder.placeholder = 'Your email is now registered.';
+        emailPlaceholder.className = 'success';
+        sendButton.className = 'greyed';
         this.reset();
 
     });

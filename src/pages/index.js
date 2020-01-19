@@ -13,19 +13,19 @@ export default () => (
 
     <div className="small-12 medium-8 columns">
         <div className="row full-left-pannel">
-        <Link to="/"><img className="logo_bp" src={require('../images/biscay_plain_logo.svg')} alt="biscay plain logo"/></Link>
+        <div className="small-12"><Link to="/"><img className="logo_bp" src={require('../images/biscay_plain_logo.svg')} alt="biscay plain logo"/></Link></div>
             <div className="small-12 columns">
                 <h2>Monthly picks for people interested in creativity</h2>
                 <h5>Get 5 free articles and guides in your inbox every last Sunday morning of the month ☕</h5>
                     <form name="contactForm" id="contactForm" method="post" className=" row topBefore padding5_top">
-                        <div className="small-12 medium-4 columns textfield_submit">
-                            <input id="email" type="email" name="Email" placeholder="Leave your e-mail..." required/>
+                        <div className="small-7 medium-4 columns textfield_submit">
+                            <input id="email" className="unsent" type="email" name="Email" placeholder="Leave your e-mail..." required/>
                         </div>
-                        <div className="small-12 medium-2 columns btn_submit">
+                        <div className="small-5 medium-3 columns btn_submit">
                             <input id='send-button' className="submitBtn" type="submit" value="Subscribe"/>
                         </div>
                         <div className="small-12 columns no-spam">
-                            <small>No spam, no fuss. Unsubscribe anytime. <Link className="menu__item" to="/legal/">Privacy policy</Link></small>
+                            <small>No spam, no fuss. Unsubscribe anytime. <Link to="/legal/">Privacy policy</Link></small>
                         </div>
                     </form>
             </div>
@@ -46,15 +46,19 @@ export default () => (
             <img src={require('../images/animated_topography.svg')} alt="test" />
         </div> */}
         <div className="phone">
-		<div className="notch"></div>
-		<div className="censor"></div>
-		<div className="camera"></div>
-		<div className="speaker"></div>
+        
 		<div className="screen">
-			<div className="inner">
+        <div className="email_bar">
             <i class="gg-chevron-left"></i>09:45
             <i class="gg-adidas"></i>
             <i class="gg-battery"></i>
+            <div className="notch"></div>
+            <div className="censor"></div>
+            <div className="camera"></div>
+            <div className="speaker"></div>
+        </div>
+			<div className="inner">
+        
             
         <img className="logo_bp" src={require('../images/biscay_plain_logo_waves.svg')} alt="biscay plain logo waves"/>
         <img className="logo_bp" src={require('../images/biscay_plain_logo.svg')} alt="biscay plain logo"/>
