@@ -49,9 +49,15 @@ export default () => (
         
 		<div className="screen">
         <div className="email_bar">
-            <i class="ico_chevron-left"></i>09:45
-            <i class="ico_network"></i>
-            <i class="ico_battery"></i>
+            <div className="email_bar_left">
+                <span class="top_hour">09:45</span>
+                <span class="top_email_ios_svg"><img src={require('../images/top_icon_email_ios.svg')} alt="top_email_ios_svg"/></span>
+            </div>
+            <div className="email_bar_right">
+                <span class="top_network_svg"><img src={require('../images/top_icon_network.svg')} alt="top_icon_network"/></span>
+                <span class="top_wifi_svg"><img src={require('../images/top_icon_wifi.svg')} alt="top_icon_wifi"/></span>
+                <span class="top_batery_svg"><img src={require('../images/top_icon_batery.svg')} alt="top_icon_batery"/></span>
+            </div>
             <div className="notch"></div>
             <div className="censor"></div>
             <div className="camera"></div>
@@ -60,8 +66,8 @@ export default () => (
 			<div className="inner">
         
             
-        <img className="logo_bp" src={require('../images/biscay_plain_logo_waves.svg')} alt="biscay plain logo waves"/>
-        <img className="logo_bp" src={require('../images/biscay_plain_logo.svg')} alt="biscay plain logo"/>
+        <img className="logo_bp_inner_phone_waves" src={require('../images/biscay_plain_logo_waves.svg')} alt="biscay plain logo waves"/>
+        <img className="logo_bp_inner_phone_logo" src={require('../images/biscay_plain_logo.svg')} alt="biscay plain logo"/>
             <small>LATEST MONTHLY ISSUE</small>
         <div className="skills_underline_orange"></div>
         <div className="callout_publications">

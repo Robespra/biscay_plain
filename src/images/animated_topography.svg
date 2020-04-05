@@ -4,7 +4,7 @@
         <style type="text/css"><![CDATA[
 
 svg {
-    opacity:0.2;
+    opacity:0.1;
     padding-top:5%;
     margin-bottom:5%;
   display: block;
@@ -24,7 +24,7 @@ svg {
 }
          .path {
 	fill: #e2cbc6;
-	stroke-dasharray: 200;
+	stroke-dasharray: 100;
 	stroke-dashoffset: 2000;
 	animation: dash 30s linear forwards infinite;
 }

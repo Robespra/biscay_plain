@@ -405,6 +405,45 @@ input:-webkit-autofill {
   -moz-box-shadow: 0px 1px 7px 0px rgba(212,212,212,1);
   box-shadow: 0px 1px 7px 0px rgba(212,212,212,1);
 }
+
+.email_bar_left {
+  margin-top: 12px;
+  margin-left: 14px;
+  float: left;
+  font-size: 0.8em;
+}
+.email_bar_left img {width: 8px; height:auto; margin-left: 0.3em;
+  margin-bottom: 0.3em;}
+
+.email_bar_right {
+  margin-top: 8px;
+  float:right;
+  }
+
+.email_bar_right img {
+  width: 13px;
+  height: auto;
+  margin-right: 8px;
+
+}
+
+.logo_bp_inner_phone_waves {
+  position: relative;
+    width: 200px;
+    height: 80px;
+    margin: 1% auto;
+    display: block;
+}
+
+.logo_bp_inner_phone_logo {
+  position: relative;
+    width: 200px;
+    height: 50px;
+    margin: 1% auto 3% auto;
+    display: block;
+}
+
+
 .notch {
   width: 200px;
   height: 30px;
@@ -466,7 +505,7 @@ input:-webkit-autofill {
   width: 92%;
   height: 100%;
   position: absolute;
-  top: 40px;
+  top: 60px;
   left:15px;
   padding-bottom: 50px;
   overflow-y: scroll;
