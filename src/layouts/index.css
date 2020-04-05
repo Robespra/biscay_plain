@@ -429,17 +429,17 @@ input:-webkit-autofill {
 
 .logo_bp_inner_phone_waves {
   position: relative;
-    width: 200px;
-    height: 80px;
+    width: 80px;
+    height: auto;
     margin: 1% auto;
     display: block;
 }
 
 .logo_bp_inner_phone_logo {
   position: relative;
-    width: 200px;
-    height: 50px;
-    margin: 1% auto 3% auto;
+  width: 150px;
+  height: 50px;
+  margin: 0 auto 3% auto;
     display: block;
 }
 
