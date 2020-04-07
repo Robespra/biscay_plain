@@ -55,18 +55,19 @@ h2 {font-size:4em; margin-bottom:0.2em}
   color: #fff;
   font-size: 3em;
 }
+
 .body_full {
   height:100vh;
   position: relative;
     overflow: auto;
-    background:url(../images/animated_topography.svg);
-    background-repeat: no-repeat;
-    /* background-size: cover; */
 }
 @media screen and (min-width:38.9375em){
   .body_full {overflow:hidden;}
 }
 
+.body_full .topo_img {
+  position: absolute;
+}
 .full-left-pannel{
   height: 100%;
 }

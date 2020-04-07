@@ -3,9 +3,16 @@ import { Link } from "gatsby"
 import Header from '../components/header'
 import Footer from '../components/footer'
 import form from '../components/formData'
+import Animated_Topo from '../../static/animated_topography.svg'
 let pathPrefix = `/`
 export default () => (
+
+
+
+
 <div className="body_full">
+<img src={Animated_Topo} className="topo_img" alt="topo"/>
+
 
 <Header/>
 
