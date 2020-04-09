@@ -3,7 +3,7 @@ import { Link } from "gatsby"
 import Header from '../components/header'
 import Footer from '../components/footer'
 import form from '../components/formData'
-import Animated_Topo from '../../static/animated_topography.svg'
+import Animated_Topo from '../../static/animated_topography_static.svg'
 let pathPrefix = `/`
 export default () => (
 
